@@ -181,3 +181,20 @@ que aponta para a imagem.
 – LINK – permite que você especifique a cor em que hiperlinks de texto não visitados
 – VLINK – permite que você especifique a cor na qual visitou
 – ALINK – permite que você especifique a cor enquanto os usuários clicam nos links.
+
+
+
+ALGUNS ELEMENTOS
+
+Criação de links
+A tag <a> define um hiperlink que é usado para ligar uma página para outra.
+O atributo mais importante do elemento é o atributo href, que indica o destino do link.
+
+SINTAXE: <a href="url">Link Text</a>
+
+	<a href="url">Link Text</a>
+	<a href="https://github.com/jhmiante/WEB/tree/main/CST%20-%20An%C3%A1lise%20e%20Desenvolvimento%20de%20Sistemas">Github CST - Análise e Desenvolvimento de Sistema</a>
+	<a href="https://github.com/jhmiante" target="_blank">Github jhmiante - Abrir em Nova Aba</a>
+
+	Propriedade target => Onde será aberto a nova página
+
