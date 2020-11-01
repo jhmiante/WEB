@@ -266,3 +266,34 @@ SINTAXE:
 
 ]
 
+
+
+Criação de campos textos
+
+A tag <input> especifica um campo de entrada onde o usuário pode inserir dados. Os
+<input> geralmente são utilizados dentro de <form>.
+
+Um campo de entrada pode variar de muitas formas, dependendo do tipo de atributo.
+
+A tag <label> cria um campo para ser digitado esse imput, seria uma separação
+
+SINTAXE:
+	<label> <input type="" name=""> </label>
+
+[
+
+	<label>Primeiro Nome:<input type="text" name="firstname"> </label> <br><br>
+	<label>Último Nome:<input type="text" name="lastname"> </label> <br><br>
+	<label>Senha:<input type="password" name="pwd"> </label> <br><br>
+	<label>Sexo: <br>
+		<input type="radio" name="sex" value="Homem"> Homem 
+		<input type="radio" name="sex" value="Mulher"> Mulher
+	</label> <br><br>
+	<label>Selecione os Veículos que possui: <br>
+		<input type="checkbox" name="veiculo" value="Moto"> Moto  
+		<input type="checkbox" name="veiculo" value="Carro"> Carro 
+	</label> <br><br>
+
+	<input type="submit" value="Submit">
+
+] 
