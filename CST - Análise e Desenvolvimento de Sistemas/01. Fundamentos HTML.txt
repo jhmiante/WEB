@@ -300,3 +300,26 @@ SINTAXE:
 
 
 TAG DE SEPARAÇÃO  <hr>
+
+
+Caracteres especiais
+
+HTML permite que caracteres especiais sejam representados por sequencias de escape,
+indicadas por três partes: um & inicial, um número ou cadeia de caracteres correspondente ao
+caractere desejado, e um ; final.
+
+Quatro caracteres ASCII - <, >, e & têm significados especiais em HTML, e são usados
+dentro de documentos seguindo a correspondência:
+
+&lt;	<
+&gt;	>
+&amp;	&
+
+Outras sequências de escape suportam caracteres ISO Latin1. 
+
+Como vemos, as sequências de escape são sensíveis à caixa. Os editores de HTML fazem
+essa tradução automaticamente.
+Alguns editores, no entanto, mantêm a acentuação, sem usar as entidades de formatação. Quando
+isso acontece, deve-se inserir uma indicação do esquema de codificação ISO Latin1, escrevendo:
+<META HTTP-EQUIV=”Content-Type” CONTENT=”text/html;charset=ISO-8859-1”>
+
