@@ -235,3 +235,34 @@ SINTAXE:
 
 ]
 
+
+Criação de listas
+
+• <ul> - lista não ordenada
+• <ol> - lista ordenda
+• <li> - item de lista
+
+SINTAXE:
+	<ul>
+		<li></li>
+	</ul>
+
+<ol>
+	<li></li>
+</ol>
+	
+
+[
+
+<ul>
+	<li>Café</li>
+	<li>Leite</li>
+</ul>
+
+<ol>
+	<li>Café</li>
+	<li>Leite</li>
+</ol>
+
+]
+
