@@ -205,4 +205,33 @@ SINTAXE: <a href="url">Link Text</a>
 Quebra de linha <br>
 
 
+Criação de tabelas.
+
+A tag <table> define uma tabela em html. 
+A tag <table> consiste em um elemento <tr>
+para indicar a linha e um elemento <td> para indicar a célula.
+
+SINTAXE:
+	<table>
+		<tr>
+			<td></td>
+		</tr>
+	</table>
+
+
+[
+
+	<table border="1">
+			<tr>
+				<td>Linha 1, Célula 1</td>
+				<td>Linha 1, Célula 2</td>
+			</tr>
+
+			<tr>
+				<td>Linha 2, Célula 1</td>
+				<td>Linha 2, Célula 2</td>
+			</tr>
+	</table>
+
+]
 
