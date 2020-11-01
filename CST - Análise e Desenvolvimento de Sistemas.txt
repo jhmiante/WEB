@@ -1,0 +1,183 @@
+O QUE É HTML?
+
+A World Wide Web (Web) é uma rede de recursos e serviços de informação.
+Ela serve-se de três mecanismos, de modo a fazer com que esses recursos estejam legivelmente
+disponíveis à audiência mais vasta possível:
+
+1. Um esquema uniforme de atribuição de nomes, de forma a se localizar os recursos na
+Web (ex: URIs).
+2. Protocolos, para o acesso aos recursos nomeados através da Web (ex: HTTP).
+3. Hipertexto, para uma navegação mais fácil através dos referidos recursos (ex: HTML).
+Os laços entre os três mecanismos evidenciam-se através desta especificação.
+
+
+
+Introdução aos URIs
+
+Todos os recursos disponíveis na Web possuem um endereço, o qual poderá ser codificado
+por um Identificador de Recursos Universal, ou “URI” (Universal Resource Identifier).
+Os URIs são de uma forma geral constituídos por três partes:
+
+1. O esquema de nomeação do mecanismo usado para se ter acesso ao recurso;
+2. O nome da máquina de hospedagem desse recurso;
+3. O nome do próprio recurso, atribuído na qualidade de trajeto (path).
+
+1. Página destinada a relatórios técnicos da W3C
+http://www.w3.org/TR/
+2. URI referente a caixa postal
+<a href=mailto:alexander_gobbato@yahoo.com.br> Prof. Alexander Gobbato</a>
+3. Identificadores de fragmentos
+http://somesite.com/html/top.html#section_2
+
+
+
+No HTML, os URIs são usados para:
+
+√ Fazer uma ligação a um outro documento ou recurso, (ver os elementos A e LINK).
+√ Fazer uma ligação a uma folha de estilo ou script (ver os elementos LINK e SCRIPT).
+√ Incluir uma imagem, objeto ou applet numa página, (ver os elementos IMG, OBJECT,APPLET e INPUT).
+√ Criar um mapa de imagens (ver os elementos MAP e AREA).
+√ Submeter um formulário (ver FORM).
+√ Criar um documento com molduras (ver os elementos FRAME e IFRAME).
+√ Citar uma referência externa (ver os elementos Q, BLOCKQUOTE, INS e DEL).
+√ Fazer referências a convenções de metadados descrevendo um documento (ver o elemento HEAD).
+
+
+
+W3C
+
+A World Wide Web Consortium (W3C) é o órgão responsável por recomendar padrões
+de desenvolvimento para a internet. Por meio destes padrões se pode classificar web sites de
+acordo com suas características técnicas, indo além do visual e navegadores, de acordo com sua
+capacidade em atender aos padrões definidos.
+Exemplos de URIs
+
+Para se publicar informação de distribuição global, é necessário utilizar-se uma linguagem
+de compreensão universal, uma espécie de Língua de publicação “Mãe”, a qual possa ser
+potencialmente usada e compreendida por todos os computadores.
+O HTML é a linguagem de publicação usada pela World Wide Web (do Inglês: Hyper Text
+Markup Language).
+O HTML dá aos autores a possibilidade de:
+
+√ Publicar documentos Online contendo cabeçalhos, texto, quadros e tabelas, listas, fotos, etc.
+√ Recuperar ou retirar informações online, por intermédio de ligações de
+hipertexto, clicando num botão.
+√ Concepção de formulários para efetuar transações com serviços remotos, para o uso
+na busca de informação, efetuar reservas, encomenda de produtos etc.
+Fonte: http://www.w3.org/TR/html401/
+
+
+Versões
+
+A versão mais significativa para nossa realidade foi o HTML 4.01 que foi publicado como
+uma recomendação do W3C em 1999. Ele possui as mesmas versões do HTML 4.0.
+A especificação do HTML 5 teve início em 2008 e ainda está em desenvolvimento sendo que
+sua última publicação foi liberada em 2012.
+
+Quando abrimos uma página HTML em um navegador, o navegador irá interpretar as tags,
+ou seja, irá fazer uma análise sintática, definindo como cada parte do texto será apresentada.
+Um problema comum no desenvolvimento de páginas HTML desde o seu surgimento e outras
+tecnologias como CSS e Javascript, é a compatibilidade entre os navegadores, ou seja, uma
+página desenvolvida em HTML5 pode rodar somente no Chrome, por exemplo, ou aparecer de
+um jeito no Internet Explorer e de outro no Firefox, também temos que tomar cuidado quando
+falamos em dispositivos ou sistemas diferentes, como visualizar nossa página em um celular.
+Nem todos os aparelhos estão aptos a rodar os códigos atuais.
+
+
+
+
+Motores de Renderização
+
+É o mecanismo utilizado pelos navegadores para processar o código das páginas web, os
+principais motores dos principais navegadores são:
+√ Webkit (é o mais compatível com HTML 5) – Safari, Chrome
+√ Gecko – Firefox
+√ Trident – Internet Explorer
+Devemos sempre procurar deixar nossos códigos compatíveis com esses motores para que
+possamos atingir o maior número possível de usuários.
+
+As marcações de tags html são geralmente chamadas de tags HTML.
+As palavras chaves estão marcadas entre os símbolos < e > como <html>
+Geralmente em pares como <b> e </b>
+A primeira tag do par é a tag inicial e a segunda tag a tag final.
+
+Regras HTML tag
+
+1. Tags HTML consistem em comandos que aparecem entre colchetes angulares (<>).
+2. Tags HTML não são case sensitive.
+3. Tags HTML quase sempre vêm em pares. 
+
+EXEMPLO:
+
+[
+
+<!DOCTYPE HTML5>
+<HTML>
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=utf-8" />
+	<title>Título do Primeiro Exemplo</title>	
+</head>
+
+<body>
+	<h1>Meu Primeiro Cabeçalho</h1>	
+	<p>Meu Primeiro Parágrafo</p>
+</body>
+
+</HTML>
+
+]
+
+Texto entre <html> e </html> descreve a página web;
+O texto entre <body> e </body> é a informação visível na página;
+O texto entre <h1> e </h1> é exibido como cabeçalho;
+O texto entre <p> e </p> é exibido como parágrafo;
+
+
+Document Type
+O elemento <!DOCTYPE> especifica o tipo de documento (DTD), como página de uso restrito
+de HTML e CSS.
+HTML 4.01 Strict DTD – adheres CSS and HTML 4.01 standards
+
+<!DOCTYPE HTML PUBLIC “-//W3C//DTD HTML 4.01//EN”
+“http://www.w3.org/TR/html4/strict.dtd”>
+HTML 4.01 Transitional DTD – adheres HTML 4.01 standards including deprecated
+HTML elements and attributes
+
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN” “http://www.w3.org/
+TR/xhtml1/DTD/xhtml1-transitional.dtd”>
+HTML 4.01 Frameset DTD - adheres HTML 4.01 standards including deprecated
+HTML elements and attributes and frames
+O DOCTYPE é a maneira de você dizer para qualquer navegador como ele deve agir ao ler
+seu código HTML.
+
+Porque cada browser tem um padrão próprio de renderizar o HTML sem DOCTYPE.
+O Strict é o “melhor” uma vez que ao dizer para um browser renderizar com ele, você está
+dizendo que seguirá rigorosamente os padrões.
+O Transitional você diz ao Browser que seu código está em transição, não necessariamente
+seguirá rigorosamente os padrões, mas não fará um “ninho de ratos”
+Já o Frameset, será para renderizar os arcaicos Frames.
+
+
+Documento principal
+
+O <html> é o elemento principal do documento HTML.
+Ele contém outros elementos como:
+√ <head> </head> tags
+√ <title></title> tags
+√ <body></body> tags
+O elemento <title> fornece o título do documento que aparece o topo do browser.
+
+• O elemento <body> contém todas as informações do documento, ele vem depois do
+cabeçalho e deve ser fechado. A lista abaixo contém alguns atributos comuns:
+– BGCOLOR – define o valor da cor;
+– BACKGROUND – permite que você especifique um arquivo gráfico para utilizar como
+imagem de fundo ;
+
+o Fornece um localizador de recursos uniforme (URL) de uma pasta de imagem para
+ser utilizada como o fundo tela
+o Se a imagem for salva em outro lugar, você tem que digitar o endereço completo
+que aponta para a imagem.
+
+– LINK – permite que você especifique a cor em que hiperlinks de texto não visitados
+– VLINK – permite que você especifique a cor na qual visitou
+– ALINK – permite que você especifique a cor enquanto os usuários clicam nos links.
