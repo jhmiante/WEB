@@ -323,3 +323,8 @@ Alguns editores, no entanto, mantêm a acentuação, sem usar as entidades de fo
 isso acontece, deve-se inserir uma indicação do esquema de codificação ISO Latin1, escrevendo:
 <META HTTP-EQUIV=”Content-Type” CONTENT=”text/html;charset=ISO-8859-1”>
 
+Section
+
+Representa um documento genérico ou seção da aplicação. Pode ser usado em conjunto com
+elementos <h1>, <h2>, <h3>, <h4>, <h5> e <h6> para indicar a estrutura do documento
+
