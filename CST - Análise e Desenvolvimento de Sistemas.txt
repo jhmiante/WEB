@@ -297,3 +297,6 @@ SINTAXE:
 	<input type="submit" value="Submit">
 
 ] 
+
+
+TAG DE SEPARAÇÃO  <hr>
