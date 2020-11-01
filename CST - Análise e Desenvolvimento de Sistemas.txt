@@ -196,5 +196,13 @@ SINTAXE: <a href="url">Link Text</a>
 	<a href="https://github.com/jhmiante/WEB/tree/main/CST%20-%20An%C3%A1lise%20e%20Desenvolvimento%20de%20Sistemas">Github CST - Análise e Desenvolvimento de Sistema</a>
 	<a href="https://github.com/jhmiante" target="_blank">Github jhmiante - Abrir em Nova Aba</a>
 
-	Propriedade target => Onde será aberto a nova página
+	Propriedades
+		href 	=> 	Link que será aberto
+		target 	=> 	Onde será aberto a nova página
+
+
+
+Quebra de linha <br>
+
+
 
