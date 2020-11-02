@@ -104,3 +104,122 @@ para criar caixas de combinação.
 <output> Representa os diferentes tipos de saída, como a saída escrita por um script.
 
 <wbr> Representa uma oportunidade (possibilidade) de quebra de linha.
+
+
+
+FORMULÁRIOS
+
+Um formulário é um componente de uma página web que possui controles como campos
+de texto, botões, caixas de seleção ou de combinações, lista, etc. É normalmente utilizado
+para: cadastrar e manipular dados de clientes, funcionários e produtos em sites de comércio
+eletrônico; enviar sugestões e/ou reclamações às empresas; validar a entrada de usuários
+em áreas restritas; etc.
+
+No que diz respeito a formulário, a validação automática de campos de entrada de e-mail,
+valores numéricos, datas, URL, etc. é sem dúvida a principal inovação do HTML5.
+
+Os formulários podem ser criados por meio do elemento <form>. No interior desse elemento
+pode ser utilizado um conjunto de outros elementos para gerar controles do formulário.
+
+Para tornar um campo de formulário obrigatório (seu valor deve ser preenchido) basta,
+em HTML5, incluir o atributo required.
+
+[
+
+	<form>
+		<label>Nome: <input></label>
+	</form>
+
+	<form>
+		<label for="Nome">Nome: <input id="Nome"></label>
+	</form>
+
+]
+
+O elemento <input>
+
+O elemento input gera um campo em que o usuário pode selecionar ou entrar com dados de
+várias maneiras. O que define como será a entrada é o atributo type.
+No HTML4, o elemento input permitia apenas tipos de campo como: button, checkbox,
+file, hidden, image, password, radio, reset, submit e text. No HTML5, foram criados mais
+alguns tipos como: color, date, datetime, datetime-local, email, month, number, range,
+search, tel, time, url e week.
+
+
+
+O campo tipo tel
+Para definir um campo de entrada de telefone é necessário que o elemento <input> possua
+o atributo type com valor “tel”.
+O atributo pattern permite inserir uma expressão regular para validação da entrada de dados
+em um campo do tipo “tel”. O atributo placeholder exibe um valor no campo até que ele receba
+o foco e ao receber o foco o valor desaparece.
+
+
+O campo tipo email
+Para definir um campo de entrada de e-mail é necessário que o elemento <input> possua o
+atributo type com valor “email”.
+
+
+O campo tipo url
+Para definir um campo de entrada de endereço web é necessário que o elemento <input>
+possua o atributo type com valor “url”.
+
+
+O campo tipo number
+O tipo “number” é utilizado para entrada de valores numéricos. É possível definir restrições
+de entrada para esse tipo de campo. O atributo value define um valor padrão para o campo.
+Já os atributos max, min e step definem, respectivamente: o valor máximo permitido, o valor
+mínimo permitido e a escala de intervalos.
+
+
+O campo tipo range
+O tipo “range” é utilizado para entrada de valores numéricos contidos em uma faixa de
+valores numéricos.
+É possível definir restrições de quais números serão aceitos.
+O tipo range é apresentado como uma barra deslizante.
+
+
+O campo tipo month
+Para definir um campo de entrada do tipo month é necessário que o elemento <input>
+possua o atributo type com valor “month”.
+
+
+O campo tipo image
+Quando um elemento <input> possui o valor image, o botão pode ser uma imagem que
+será utilizada para submeter o formulário.
+
+
+O campo tipo radio
+Campos radio (radio buttons) servem para permitir que o usuário selecione uma (e somente
+uma) dentre muitas opções de escolha disponibilizadas em um formulário.
+Campos radio são criados pelo elemento <input> contendo o atributo type com o valor “radio”.
+
+
+O campo tipo checkbox
+Para permitir que o usuário selecione várias das muitas opções disponíveis em uma sequência
+de itens, pode-se utilizar elementos <input> com o atributo type contendo o valor “checkbox”. Ao
+contrário do campo radio o checkbox aceita várias opções.
+
+
+O campo tipo datalist
+O elemento <datalist> especifica uma lista oculta de opções sugeridas (não obrigatórias)
+para um campo de entrada. A lista com elementos <option> dentro do <datalist>.
+
+
+O campo tipo keygen
+O propósito do keygen é proporcionar uma forma segura de autenticar os usuários de um
+site por meio de formulário. Ele é um gerador de par de chaves. Quando um formulário é
+submetido, duas chaves são geradas, sendo uma privada e outra pública.
+
+
+O campo tipo select
+O elemento <select> permite a criação de uma lista de opções, na qual é possível
+selecionar um ou mais elementos.
+Se o elemento multiple estiver presente, então será possível selecionar nenhum ou vários
+elementos.
+
+
+O atributo pattern
+É usado para validar tipos de campos no HTML5, é feita automaticamente ao submeter o
+formulário
+

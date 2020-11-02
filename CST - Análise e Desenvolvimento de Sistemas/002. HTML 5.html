@@ -79,8 +79,130 @@ para criar caixas de combinação.
 <output> Representa os diferentes tipos de saída, como a saída escrita por um script.
 
 <wbr> Representa uma oportunidade (possibilidade) de quebra de linha.
-			
+
 </textarea>
+
+<br>
+<hr>
+<br>
+
+<section>
+	
+	<h3>FORMULÁRIOS</h3>
+	<p>
+		Um formulário é um componente de uma página web que possui controles como campos
+		de texto, botões, caixas de seleção ou de combinações, lista, etc. É normalmente utilizado
+		para: cadastrar e manipular dados de clientes, funcionários e produtos em sites de comércio
+		eletrônico; enviar sugestões e/ou reclamações às empresas; validar a entrada de usuários
+		em áreas restritas; etc.
+	</p>
+	<p>
+		No que diz respeito a formulário, a validação automática de campos de entrada de e-mail,
+		valores numéricos, datas, URL, etc. é sem dúvida a principal inovação do HTML5.
+	</p>
+	<p>
+		Os formulários podem ser criados por meio do elemento <form>. No interior desse elemento
+		pode ser utilizado um conjunto de outros elementos para gerar controles do formulário.
+	</p>
+	<p>
+		Para tornar um campo de formulário obrigatório (seu valor deve ser preenchido) basta,
+		em HTML5, incluir o atributo required.</p>
+	</p>
+
+
+	<form>
+		<label for="Nome">Nome: <input id="Nome"></label>
+	</form>
+
+	<hr>
+	<br>
+
+	<form>
+		<table>
+			<tr bgcolor="lightgray" align="center">
+				<td>Tipo</td>
+				<td align="">Saída</td>
+			</tr>
+			<tr>
+				<td>Nome: </td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>Telefone: </td>
+				<td><input type="tel"></td>
+			</tr>
+			<tr>
+				<td>Email: </td>
+				<td><input type="email"></td>
+			</tr>
+			<tr>
+				<td>Url: </td>
+				<td><input type="url"></td>
+			</tr>
+			<tr>
+				<td>Number: </td>
+				<td><input type="number"></td>
+			</tr>
+			<tr>
+				<td>Range: </td>
+				<td><input type="range"></td>
+			</tr>
+			<tr>
+				<td>Month: </td>
+				<td><input type="month"></td>
+			</tr>
+			<tr>
+				<td>Date: </td>
+				<td><input type="date"></td>
+			</tr>
+			<tr>
+				<td>DataList: </td>
+				<td>
+					<input list="browsers" name="browser" id="browser">
+
+					<datalist id="browsers">
+						  <option value="Edge">
+						  <option value="Firefox">
+						  <option value="Chrome">
+						  <option value="Opera">
+						  <option value="Safari">
+					</datalist>
+				</td>
+			</tr>
+			<tr>
+				<td>Radio: </td>
+				<td><input type="radio" name="radioId">Radio 1 <input type="radio" name="radioId">Radio 2</td>
+			</tr>
+			<tr>
+				<td>Checkbox: </td>
+				<td><input type="checkbox">Checkbox 1 <input type="checkbox">Checkbox 2</td>
+			</tr>
+			<tr>
+				<td>Select:</td>
+				<td>
+					<select name="cars" id="cars">
+						  <option value="volvo">Volvo</option>
+						  <option value="saab">Saab</option>
+						  <option value="mercedes">Mercedes</option>
+						  <option value="audi">Audi</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Pattern</td>
+				<td><input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}"></td>
+			</tr>
+			<tr>
+				<td>Keygen: </td>
+				<td>Encryption: <keygen name="security"></td>
+			</tr>
+		</table>
+		<br>
+		<input type="submit" value="Submit">
+	</form>
+
+	
+</section>
 
 </body>
 </html>
