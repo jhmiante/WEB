@@ -305,3 +305,21 @@ padding-left:50px;
 ##########################
 
 
+CSS3 é divido em módulos
+Alguns dos mais importantes módulos são:
+• Selectors
+• Box Model
+• Backgrounds and Borders
+• Text Effects
+• 2D/3D Transformations
+
+Lembrando que o CSS3 ainda está sobre o desenvolvimento da W3C.
+
+Alguns módulos não são reconhecidos automaticamento, precisando importar para a versão do navegador
+
+Google Chrome 	=> 	-webkit-
+Safari 			=> 	-webkit-
+Mozzila 		=> 	-moz-
+Opera 			=> 	-o-
+
+##########################
