@@ -292,3 +292,16 @@ margin-left:50px;
 ##########################
 
 
+Estilo – padding
+A propriedade padding define o espaço entre o elemento e a borda
+O espaçamento superior, inferior, direita e esquerda pode ser alterado de forma independente usando suas propriedades separadas.
+
+padding-top:25px;
+padding-bottom:25px;
+padding-right:50px;
+padding-left:50px;
+
+
+##########################
+
+
