@@ -323,3 +323,19 @@ Mozzila 		=> 	-moz-
 Opera 			=> 	-o-
 
 ##########################
+
+
+CSS3 Cantos arredondados
+A propriedade border-radius permite adicionar o efeito de arredondamento no elemento.
+
+div {
+border:2px solid #a1a1a1;
+padding:10px 40px;
+background:#dddddd;
+width:300px;
+border-radius:25px;
+-moz-border-radius:25px; /* Firefox 3.6 and earlier */
+}
+
+##########################
+
