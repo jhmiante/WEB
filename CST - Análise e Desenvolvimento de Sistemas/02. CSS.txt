@@ -198,3 +198,58 @@ p {text-indent:50px;}
 ##########################
 
 
+Estilo – font
+A propriedade fonte define família , tamanho e estilo do texto
+• font-family
+• font-style
+• font-size
+
+A família da fonte de um texto é definida com a propriedade font-family.
+A propriedade font-family deve manter nomes de fontes diversas como um sistema de “retorno”. Se o navegador não suportar primeira, ele tentará a próxima.
+
+p{font-family:”Times New Roman”, Times, serif;}
+
+
+A propriedade font-style possui 3 valores
+normal – ( a própria fonte )
+italic – ( itálico )
+oblique – ( muito similar com o itálico mas menos utilizado )
+
+p.normal {font-style:normal;}
+p.italic {font-style:italic;}
+p.oblique {font-style:oblique;}
+
+
+A propriedade font-size define o tamanho do texto.
+É capaz de gerenciar o tamanho do texto.
+O valor font-size pode ser um tamanho absoluto ou relativo.
+
+
+Tamanho absoluto:
+
+• Define o texto a um tamanho especificado;
+• Não permite que o usuário altere o tamanho do texto em todos os navegadores (ruim por razões de acessibilidade)
+• Tamanho absoluto é útil quando o tamanho físico da saída é conhecida
+
+
+Tamanho relativo:
+
+• Define o tamanho relativo aos elementos;
+• Permite que o usuário altere o tamanho do texto em navegadores;
+
+
+h1 {font-size:40px;}
+h2 {font-size:30px;}
+p {font-size:14px;}
+h1 {font-size:2.5em;} /* 40px/16=2.5em */
+h2 {font-size:1.875em;} /* 30px/16=1.875em */
+p {font-size:0.875em;} /* 14px/16=0.875em */
+body {font-size:100%;}
+h1 {font-size:2.5em;}
+h2 {font-size:1.875em;}
+p {font-size:0.875em;}
+
+
+##########################
+
+
