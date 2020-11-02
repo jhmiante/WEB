@@ -328,3 +328,12 @@ Section
 Representa um documento genérico ou seção da aplicação. Pode ser usado em conjunto com
 elementos <h1>, <h2>, <h3>, <h4>, <h5> e <h6> para indicar a estrutura do documento
 
+<section>
+
+
+Article
+
+Representa uma peça independente do conteúdo de um documento, como um blog ou artigo de jornal.
+
+<article>
+
