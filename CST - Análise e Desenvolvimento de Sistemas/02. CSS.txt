@@ -253,3 +253,29 @@ p {font-size:0.875em;}
 ##########################
 
 
+Estilo – border
+A propriedade border-style permite especificar o estilo e a cor dos elementos bordas.
+• dotted
+• dashed
+• solid
+• double
+• groove
+• ridge
+• inset
+• Outset
+
+border-style:dotted solid;
+
+A propriedade pode ser setada individualmente
+
+p{
+border-top-style:dotted;
+border-right-style:solid;
+border-bottom-style:dotted;
+border-left-style:solid;
+}
+
+
+##########################
+
+
