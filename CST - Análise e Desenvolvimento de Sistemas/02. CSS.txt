@@ -105,3 +105,50 @@ O estilo inline é usado diretamento no elemento HTML
 
 ##########################
 
+Estilo – background
+As propriedades do background são usadas para criar efeitos a um elemento.
+
+• background-color
+• background-image
+• background-repeat
+• background-attachment
+• background-position
+
+A propriedade background-color especifica a cor de fundo do elemento.
+
+body {background-color:#b0c4de;}
+
+
+
+A propriedade background-image define uma imagem para o elemento;
+
+body {background-image:url(‘paper.gif’);}
+
+
+
+A propriedade background-image duplica a imagem horizontal e verticalmente.
+Algumas imagens podem ser repetidas somente horizontalmente ou verticalmente.
+
+body{ background-image:url(‘gradient2.png’); }
+
+
+
+Imagem repetida somente na horizontal
+body{ background-image:url(‘gradient2.png’); background-repeat:repeat-x; }
+
+
+
+Ao usar uma imagem de fundo, configurar a imagem para não atrapalhar o texto
+
+body{ background-image:url(‘img_tree.png’); background-repeat:no-repeat; }
+
+
+
+No exemplo acima, a imagem de fundo é mostrado no mesmo lugar que o texto.
+Queremos mudar a posição da imagem, de modo que ela não perturbe o texto.
+
+body{ background-image:url(‘img_tree.png’); background-repeat:no-repeat; background-position:right top; }
+
+
+##########################
+
