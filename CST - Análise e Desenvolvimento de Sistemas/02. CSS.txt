@@ -279,3 +279,16 @@ border-left-style:solid;
 ##########################
 
 
+Estilo – margin
+A margem não tem uma cor de fundo e é completamente transparente.
+A margem superior, inferior, direita e esquerda pode ser alterada de forma independente usando suas propriedades separadas.
+
+margin-top:100px;
+margin-bottom:100px;
+margin-right:50px;
+margin-left:50px;
+
+
+##########################
+
+
