@@ -337,3 +337,13 @@ Representa uma peça independente do conteúdo de um documento, como um blog ou 
 
 <article>
 
+
+
+
+Aside
+
+Representa uma parte do conteúdo que é pouco relacionado com o resto da página
+
+<aside>
+
+
