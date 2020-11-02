@@ -152,3 +152,49 @@ body{ background-image:url(‘img_tree.png’); background-repeat:no-repeat; bac
 
 ##########################
 
+Estilo – text
+As propriedades do text:
+• text-align
+• text-decoration
+• text-transform
+• text-indent
+
+A propriedade color é usada para configurar a cor do texto
+
+body {color:blue;}
+h1 {color:#00ff00;}
+h2 {color:rgb(255,0,0);}
+
+
+A propriedade text-align é usada para especificar o alinhamento do texto, a propriedade é usada para alinhar a esquerda, direita, centralizado ou justificado.
+
+h1 {text-align:center;}
+p.date {text-align:right;}
+p.main {text-align:justify;}
+
+
+A propriedade text-decoration é usada para configurar ou remover decorações do texto.
+O text-decoration é mais frequentemente utilizado nos links
+
+a {text-decoration:none;}
+h1 {text-decoration:overline;}
+h2 {text-decoration:line-through;}
+h3 {text-decoration:underline;}
+h4 {text-decoration:blink;}
+
+
+A propriedade text-transform é usada para especificar o uppercase e lowercase nos textos.
+
+p.uppercase {text-transform:uppercase;}
+p.lowercase {text-transform:lowercase;}
+p.capitalize {text-transform:capitalize;}
+
+
+A propriedade text-indentation é usada para especificar a identificação na 1a. linha do texto.
+
+p {text-indent:50px;}
+
+
+##########################
+
+
