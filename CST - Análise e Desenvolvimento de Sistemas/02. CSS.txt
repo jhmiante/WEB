@@ -42,3 +42,25 @@ h1 {
 
 Para inserir um código CSS pode ser utlizado o próprio documento ou um arquivo externo, recomenda-se utilizar um documento externo, pois pode ser reutilizado a mesma folha de estilo, porém vamos aprender primeiramente ulilizar dentro do próprio html, para isso utiliza-se a tag <style>
 
+
+
+###########################
+
+CSS id e CSS classe
+Através do css você pode criar um estilo para um elemento do HTML, o css permite criar um estilo para um seletor através do id e class.
+
+ID
+O id é usado para especificar um estilo para um elemento único, o seletor id é atribuído ao id do elemento HTML e definido com o caracter “#”.
+
+<style>
+      #NomeDoId { color: green; }
+
+</style>
+Classe
+A classe é usada para especificar um estilo para um grupo de elementos, ela permite que você crie um estilo para vários elementos do HTML com a mesma classe. (utilisa-se o . para referenciar a classe no css)
+
+<style>
+      .NomeDaClasse { color: darkgray; }
+
+</style>
+
