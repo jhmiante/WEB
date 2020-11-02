@@ -116,9 +116,61 @@ Sintaxe CSS</p>
 				<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font color="red">.NomeDaClasse</font> { <font color="blue">color: darkgray</font>; } </p>
 			&lt;/style>	
 		</div>
+</div>
+
+<br><hr><br>
+
+<div>
+	<h2>Estilo</h2>
+	<p>		
+		Como mencionado, existem mais de uma forma de incluir o css no seu arquivo, na verdade existem três maneiras de se utilizar o estilo, sendo: <br><br>
+		• Estilo externo <br>
+		• Estilo interno <br>	
+		• Estilo inline <br><br>
+		O estilo externo é ideal quando a formatação deve ser aplicado a várias páginas. Com um
+		arquivo externo você pode alterar um formato e ele será automaticamente em todo o projeto. <br><br>
+	</p>
 
 
+	<h3>Link Externo</h3>
+	<p>
+		Cada página deve ter um link para o estilo usando &lt;link>, essa tag deve estar dentro da seção &lt;head>
 
+		&lt;link rel=”stylesheet” type=”text/css” href=”mystyle.css” />
+
+		Um estilo externo pode ser escrito por qualquer editor, não deve conter nenhuma tag html. <br><br>
+		O arquivo deve ser salvo com a extensão .css.
+	</p>
+
+	<p> 
+		<font color="red">h1</font> { <br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="blue">color: blue</font>; <br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="blue">font-size: 30px;</font> <br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} 
+	</p>
+
+	<br><br>
+
+	<h3>Estilo Interno</h3>
+
+	<p>O estilo interno é usado na própria página de html. O estilo é definido na seção (já utilizado nesta sessão)</p>
+
+	<div>
+		&lt;style>
+			<p> <font color="red">h1</font> { <br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="blue">color: blue</font>; <br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="blue">font-size: 30px;</font> <br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} </p>
+		&lt;/style>	
+	</div>
+
+	<br><br>
+
+	<h3>Estilo Inline</h3>
+
+	<p>O estilo inline é usado diretamento no elemento HTML</p>
+
+	<p>&lt;p style=”color:sienna;margin-left:20px”>This is a paragraph. &lt;/p></p>
 
 </div>
 

@@ -54,13 +54,54 @@ O id é usado para especificar um estilo para um elemento único, o seletor id �
 
 <style>
       #NomeDoId { color: green; }
-
 </style>
 Classe
 A classe é usada para especificar um estilo para um grupo de elementos, ela permite que você crie um estilo para vários elementos do HTML com a mesma classe. (utilisa-se o . para referenciar a classe no css)
 
 <style>
       .NomeDaClasse { color: darkgray; }
+</style>
+
+
+Estilo
+Como mencionado, existem mais de uma forma de incluir o css no seu arquivo, na verdade existem três maneiras de se utilizar o estilo, sendo:
+
+• Estilo externo
+• Estilo interno
+• Estilo inline
+
+O estilo externo é ideal quando a formatação deve ser aplicado a várias páginas. Com um arquivo externo você pode alterar um formato e ele será automaticamente em todo o projeto.
+
+Link Externo
+Cada página deve ter um link para o estilo usando <link>, essa tag deve estar dentro da seção <head> <link rel=”stylesheet” type=”text/css” href=”mystyle.css” /> Um estilo externo pode ser escrito por qualquer editor, não deve conter nenhuma tag html.
+
+O arquivo deve ser salvo com a extensão .css.
+
+h1 {
+          color: blue;
+          font-size: 30px;
+     }
+
+
+
+Estilo Interno
+O estilo interno é usado na própria página de html. O estilo é definido na seção (já utilizado nesta sessão)
+
+<style>
+h1 {
+          color: blue;
+          font-size: 30px;
+     }
 
 </style>
+
+
+Estilo Inline
+O estilo inline é usado diretamento no elemento HTML
+
+<p style=”color:sienna;margin-left:20px”>This is a paragraph. </p>
+
+
+
+##########################
 
