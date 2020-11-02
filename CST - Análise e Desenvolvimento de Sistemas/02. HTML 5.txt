@@ -223,3 +223,37 @@ O atributo pattern
 É usado para validar tipos de campos no HTML5, é feita automaticamente ao submeter o
 formulário
 
+
+
+
+Áudio e Vídeo
+
+Com a nova versão do HTML, como padrão, é oferecido um tocador de arquivos
+de áudio. Até agora, a maioria dos arquivos de áudio era disponibilizada somente por um
+plugin (por exemplo: flash), só que, como existem diferentes browsers, eles eram executados
+de formas diferentes. Com o HTML5 foi definido um novo elemento que por padrão permite
+tocar áudio na página da web.
+
+O elemento <audio> já possui os controles de play, pause e volume, você apenas
+deve inserir o texto entre as tags <audio>... </audio>. A tag <audio> permite algumas
+extensões de áudio como exibido na tabela a seguir:
+
+Formato MIME-type
+MP3 audio/mpeg
+Ogg audio/ogg
+Wav audio/wav
+
+Para publicar a formatação do áudio utilizaremos a tag <audio> e <source>
+Browser MP3 Wav Ogg
+Internet Explorer 9+ sim não não
+Chrome 6+ sim sim sim
+Firefox 3.6+ não sim sim
+Safari 5+ sim sim não
+Opera 10+ não sim sim
+
+[
+	<audio controls>
+		<source src="Audio.mp3" type="audio/mpeg">
+	</audio>
+]
+
