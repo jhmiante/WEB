@@ -354,3 +354,13 @@ autorais etc.
 
 <footer>
 
+
+Figure
+Representa uma parte do conteúdo de fluxo auto suficiente.
+Serve para agrupar uma seção de conteúdo independente, como um vídeo ou uma imagem.
+
+<figure>
+
+
+Imagem => para inserir uma imagem usa-se a tag <img src="">
+
