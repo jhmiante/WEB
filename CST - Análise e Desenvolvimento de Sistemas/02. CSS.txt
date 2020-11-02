@@ -1,0 +1,44 @@
+CSS
+
+
+Qual a diferença de HTML e CSS?
+HTML => Estrutura do site (Layout, blocos ...)
+
+CSS => Formatação do site (Cores, fontes, exibição ...)
+
+O propósito do HTML é conter tags de formatação de documento, o HTML define o conteúdo do documento e como exibido:
+<h1> Este é um título </h1>
+<p> Este é um parágrafo. </p>
+
+
+Quando tags como <font> e atributos de cor foram adicionados à especificação HTML 3.2, começou um pesadelo para os desenvolvedores web. Para resolver este problema, o World Wide Web Consortium (W3C), especificou CSS.
+Em HTML 4.0, toda a formatação pode ser removida do documento HTML e armazenada em um arquivo CSS separado. Todos os browsers suportam CSS hoje.
+
+Benefícios do CSS
+CSS define como elementos HTML devem ser exibidos. Estilos são normalmente guardados em arquivos externos .css. Folhas de estilo externas permitem que você altere a aparência e o layout de todas as páginas de um site, apenas editando um único arquivo. Sintaxe CSS
+
+Uma regra CSS tem duas partes principais:
+
+• um seletor;
+• e uma ou mais declarações.
+
+SINTAXE:
+
+SELETOR { Declaração; Declaração; }
+
+ou
+
+SELETOR {
+          Declaração;
+          Declaração;
+     }
+
+EXEMPLO:
+
+h1 {
+          color: blue;
+          font-size: 12px;
+     }
+
+Para inserir um código CSS pode ser utlizado o próprio documento ou um arquivo externo, recomenda-se utilizar um documento externo, pois pode ser reutilizado a mesma folha de estilo, porém vamos aprender primeiramente ulilizar dentro do próprio html, para isso utiliza-se a tag <style>
+
