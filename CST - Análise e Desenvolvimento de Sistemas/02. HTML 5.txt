@@ -287,3 +287,7 @@ Ogg 		video/ogg
 
 ]
 
+*** Por meio dos métodos DOM podemos manipular as propriedades da tag <video> utilizando
+comando em Javascript. Existem funcionalidades para iniciar, pausar e carregar, mas veremos
+essas funcionalidades em outra unidade, onde trabalharemos com programação para a web.
+
