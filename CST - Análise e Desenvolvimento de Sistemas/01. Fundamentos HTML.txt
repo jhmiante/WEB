@@ -347,3 +347,10 @@ Representa uma parte do conteúdo que é pouco relacionado com o resto da págin
 <aside>
 
 
+Footer
+
+Representa um rodapé de uma seção e pode conter informações sobre o autor, direitos
+autorais etc.
+
+<footer>
+
