@@ -1,0 +1,36 @@
+HTML 5
+
+Doctype
+
+O Doctype deve ser a primeira linha de código do documento antes da tag HTML.
+
+<!DOCTYPE html>
+
+O Doctype indica para o navegador e para outros meios qual a especificação de código
+utilizar. Em versões anteriores, era necessário referenciar o DTD diretamente no código do
+Doctype. Com o HTML5, a referência por qual DTD utilizar é responsabilidade do Browser.
+O Doctype não é uma tag do HTML, mas uma instrução para que o browser tenha
+informações sobre em qual versão de código a marcação foi escrita.
+
+Todo código html deve estar dentro da tag <html> </html>
+
+As configurações e título deve estar dentro da tag <head> </head>
+
+O título da página deve ficar dentro da tag <title> </title>
+
+O corpo do site deve ficar dentro da tag <body> </body>
+
+O rodapé do site deve ficar dentro da tag <footer> </footer>
+
+Esqueleto de um HTML 5 padrão (sem rodapé):
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>
+
