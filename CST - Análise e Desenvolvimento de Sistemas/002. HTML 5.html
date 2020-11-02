@@ -206,9 +206,13 @@ para criar caixas de combinação.
 <br>
 <hr>
 <br>
+	
+	<h2>Áudio e Vídeo</h2>
+
+<br><hr><br>
 
 <section>
-	<h2>Áudio e Vídeo</h2>
+	<h3>Áudio</h3>
 	<textarea rows="23" cols="100">
 Com a nova versão do HTML, como padrão, é oferecido um tocador de arquivos
 de áudio. Até agora, a maioria dos arquivos de áudio era disponibilizada somente por um
@@ -219,19 +223,6 @@ tocar áudio na página da web.
 O elemento <audio> já possui os controles de play, pause e volume, você apenas
 deve inserir o texto entre as tags <audio>... </audio>. A tag <audio> permite algumas
 extensões de áudio como exibido na tabela a seguir:
-
-Formato MIME-type
-MP3 audio/mpeg
-Ogg audio/ogg
-Wav audio/wav
-
-Para publicar a formatação do áudio utilizaremos a tag <audio> e <source>
-Browser MP3 Wav Ogg
-Internet Explorer 9+ sim não não
-Chrome 6+ sim sim sim
-Firefox 3.6+ não sim sim
-Safari 5+ sim sim não
-Opera 10+ não sim sim
 	</textarea>
 
 <br><br>
@@ -242,6 +233,26 @@ Opera 10+ não sim sim
 </section>
 
 <br><hr><br>
+
+<section>
+	<h3>Vídeo</h3>
+	<textarea rows="10" cols="100">
+	O elemento <video> também possui os controles de play, pause e volume. Com ele também
+podemos definir a altura e a largura que serão reservadas para o elemento, esses atributos são
+importantes para o browser reservar um espaço enquanto está sendo carregado. Se a altura e a
+largura não forem passadas, no momento do carregamento da página os outros elementos serão
+trocados de lugar.
+	</textarea>
+	<br>
+
+	<video width="640" height="480" controls>
+		<source src="Video.mp4" type="video/mp4">
+	</video>
+
+</section>
+
+<br><hr><br>
+
 
 </body>
 </html>

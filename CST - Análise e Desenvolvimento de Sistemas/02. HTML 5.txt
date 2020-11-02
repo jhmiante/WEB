@@ -238,22 +238,52 @@ O elemento <audio> já possui os controles de play, pause e volume, você apenas
 deve inserir o texto entre as tags <audio>... </audio>. A tag <audio> permite algumas
 extensões de áudio como exibido na tabela a seguir:
 
-Formato MIME-type
-MP3 audio/mpeg
-Ogg audio/ogg
-Wav audio/wav
+Formato 	MIME-type
+MP3 		audio/mpeg
+Ogg 		audio/ogg
+Wav 		audio/wav
 
 Para publicar a formatação do áudio utilizaremos a tag <audio> e <source>
-Browser MP3 Wav Ogg
-Internet Explorer 9+ sim não não
-Chrome 6+ sim sim sim
-Firefox 3.6+ não sim sim
-Safari 5+ sim sim não
-Opera 10+ não sim sim
+
+Browser 				MP3 	Wav 	Ogg
+Internet Explorer 9+ 	sim 	não 	não
+Chrome 6+ 				sim 	sim 	sim
+Firefox 3.6+ 			não 	sim 	sim
+Safari 5+ 				sim 	sim 	não
+Opera 10+ 				não 	sim 	sim
 
 [
 	<audio controls>
 		<source src="Audio.mp3" type="audio/mpeg">
 	</audio>
+]
+
+
+ O elemento <video> também possui os controles de play, pause e volume. Com ele também
+podemos definir a altura e a largura que serão reservadas para o elemento, esses atributos são
+importantes para o browser reservar um espaço enquanto está sendo carregado. Se a altura e a
+largura não forem passadas, no momento do carregamento da página os outros elementos serão
+trocados de lugar.
+
+Browser 				MP4 	WebM 	Ogg
+Internet Explorer 9+ 	sim 	não 	não
+Chrome 6+ 				sim 	sim 	sim
+Firefox 3.6+ 			não 	sim 	sim
+Safari 5+ 				sim 	não 	não
+Opera 10.6+ 			não 	sim 	sim
+
+Os formatos válidos para os vídeos estão relacionados abaixo:
+
+Formato 	MIME-type
+MP4 		video/mp4
+WebM 		video/webm
+Ogg 		video/ogg
+
+[
+
+	<video width="640" height="480" controls>
+		<source src="Video.mp4" type="video/mp4">
+	</video>
+
 ]
 
