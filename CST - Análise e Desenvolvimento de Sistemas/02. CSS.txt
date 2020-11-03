@@ -384,3 +384,19 @@ background-origin:content-box;
 ##########################
 
 
+CSS3 Text Effetcs
+O text effetcs possui duas propriedades como text-shadow e word-wrap
+
+text-shadow
+
+h2 {
+text-shadow: 5px 5px 5px #FF0000;
+}
+
+
+Efeito quebra de linha word-wrap
+p {word-wrap:break-word;}
+
+
+##########################
+
