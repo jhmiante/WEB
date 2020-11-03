@@ -448,3 +448,16 @@ div {
 	-o-transform: translate(50px,100px); /* Opera */
 	-moz-transform: translate(50px,100px); /* Firefox */
 	}
+
+
+##########################
+
+Item Fixo
+
+#menu {
+position: fixed;
+right: 0;
+top: 50%;
+width: 8em;
+margin-top: -2.5em;
+}
