@@ -13,6 +13,8 @@
 			-moz-border-radius:25px; /* Firefox 3.6 and earlier */
 			-moz-box-shadow: 10px 10px 5px #888888; /* Firefox 3.6 and earlier */
 		 	box-shadow: 10px 10px 5px #888888;
+		 	margin-top: 25px;
+		 	margin-bottom: 25px;
 		}
 	</style>
 </head>
@@ -98,7 +100,7 @@ Sintaxe CSS</p>
 
 </section>
 </div>
-<br><hr><br>
+
 <div> <!-- Classe e ID -->
 	<h1>CSS id e CSS classe</h1>
 	<p>
@@ -131,8 +133,6 @@ Sintaxe CSS</p>
 			&lt;/style>	
 		</section>
 </div>
-
-<br><hr><br>
 
 <div>
 	<h2>Estilo</h2>
@@ -188,8 +188,6 @@ Sintaxe CSS</p>
 
 </div>
 
-<br><hr><br>
-
 <div>
 	<h2>Estilo – background</h2>
 
@@ -222,8 +220,6 @@ Sintaxe CSS</p>
 		body{ background-image:url(‘img_tree.png’); background-repeat:no-repeat; background-position:right top; }<br>
 	</p>
 </div>
-
-<br><hr><br>
 
 <div>
 	<h2>Estilo – text</h2>
@@ -266,8 +262,6 @@ Sintaxe CSS</p>
 		p {text-indent:50px;}
 	</p>
 </div>
-
-<br><hr><br>
 
 <div>
 	<h2>Estilo – font</h2>
@@ -319,9 +313,6 @@ Sintaxe CSS</p>
 	</p>
 </div>
 
-<br><hr><br>
-
-
 <div>
 	<h2>Estilo – border</h2>
 
@@ -353,8 +344,6 @@ Sintaxe CSS</p>
 	</p>
 </div>
 
-<br><hr><br>
-
 <div style="margin-top:100px;
 			margin-bottom:100px;
 			margin-right:50px;
@@ -372,8 +361,6 @@ Sintaxe CSS</p>
 		margin-left:50px;
 	</p>
 </div>
-
-<br><hr><br>
 
 <div style="padding-top:25px;
 			padding-bottom:25px;
@@ -393,8 +380,6 @@ Sintaxe CSS</p>
 	</p>
 
 </div>
-
-<br><hr><br>
 
 <div>
 	<h2>CSS3 é divido em módulos</h2>
@@ -418,8 +403,6 @@ Sintaxe CSS</p>
 	</p>
 </div>
 
-<br><hr><br>
-
 <div>
 	<h2>CSS3 Cantos arredondados</h2>
 	<p>		
@@ -435,7 +418,6 @@ Sintaxe CSS</p>
 	</p>
 </div>
 
-<br><hr><br>
 
 <div>
 	<h2>CSS3 Sombreamento</h2>
@@ -448,7 +430,48 @@ Sintaxe CSS</p>
 	</p>
 </div>
 
-<br><hr><br>
+
+<div>
+	<h2>CSS3 Backgrounds</h2>
+	<p>
+		O css backgrounds possui algumas novidades como: <br>
+		• background-size <br>
+		• background-origin <br><br>
+		Firefox 3.6 e as versões anteriores não suportam a background-origin e necessitam do prefixo
+		–moz- e para suporte a background-size. <br><br>
+		Safari 4 necessita do prefixo –webkit- para dar suporte as novas propriedades.<br>
+		O internet Explorer 9, Firefox 4, Chrome, Safari 5 e Opera suportam as novas propriedades.
+	</p>
+
+	<h3>CSS3 Background Size – Especifíca o tamanho da imagem de fundo</h3>
+	<p>
+		div	{ <br>
+			 background:url(img_flwr.gif);<br>
+			 -moz-background-size:80px 60px; /* Firefox 3.6 */<br>
+			 background-size:80px 60px;<br>
+			 background-repeat:no-repeat;<br>
+			}<br><br>
+
+			div	{<br>
+			 background:url(img_flwr.gif);<br>
+			 -moz-background-size:100% 100%; /* Firefox 3.6 */<br>
+			 background-size:100% 100%;<br>
+			 background-repeat:no-repeat;<br>
+			}
+	</p>
+
+	<h3>CSS3 background-origin - Especifica a posição da área que a imagem será exibida como fundo </h3>
+	<p>
+		div	{<br>
+			 background:url(img_flwr.gif);<br>
+			 background-repeat:no-repeat;<br>
+			 background-size:100% 100%;<br>
+			 -webkit-background-origin:content-box; /* Safari */<br>
+			 background-origin:content-box;<br>
+			}
+	</p>
+</div>
+
 
 </body>
 </html>

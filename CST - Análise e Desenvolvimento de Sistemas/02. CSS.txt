@@ -346,3 +346,41 @@ div { -moz-box-shadow: 10px 10px 5px #888888; /* Firefox 3.6 and earlier */ box-
 ##########################
 
 
+CSS3 Backgrounds
+O css backgrounds possui algumas novidades como:
+• background-size
+• background-origin
+
+Firefox 3.6 e as versões anteriores não suportam a background-origin e necessitam do prefixo –moz- e para suporte a background-size.
+
+Safari 4 necessita do prefixo –webkit- para dar suporte as novas propriedades.
+O internet Explorer 9, Firefox 4, Chrome, Safari 5 e Opera suportam as novas propriedades.
+
+CSS3 Background Size – Especifíca o tamanho da imagem de fundo
+div {
+background:url(img_flwr.gif);
+-moz-background-size:80px 60px; /* Firefox 3.6 */
+background-size:80px 60px;
+background-repeat:no-repeat;
+}
+
+div {
+background:url(img_flwr.gif);
+-moz-background-size:100% 100%; /* Firefox 3.6 */
+background-size:100% 100%;
+background-repeat:no-repeat;
+}
+
+CSS3 background-origin - Especifica a posição da área que a imagem será exibida como fundo
+div {
+background:url(img_flwr.gif);
+background-repeat:no-repeat;
+background-size:100% 100%;
+-webkit-background-origin:content-box; /* Safari */
+background-origin:content-box;
+}
+
+
+##########################
+
+
