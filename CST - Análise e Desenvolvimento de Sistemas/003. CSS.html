@@ -491,5 +491,33 @@ Sintaxe CSS</p>
 	</p>
 </div>
 
+<div>
+	<h2>CSS3 Font-Face </h2>
+
+	<p>
+		Antes de CSS3, os web designers tinha que utilizar fontes instaladas previamente no
+		computador do usuário.		
+	</p>
+
+	<p>
+		Com essa nova característica você pode disponibilizar o arquivo no servidor web, e ele será
+		automaticamente baixado para o usuário, quando necessário.
+	</p>
+
+	<p>
+		@font-face{ <br>
+		 font-family: myFirstFont;<br>
+		 src: url(‘Sansation_Light.ttf’),<br>
+		 url(‘Sansation_Light.eot’); /* IE9+ */<br>
+		}<br>
+		<br>
+		div<br>
+		{<br>
+		 font-family:myFirstFont;<br>
+		}<br>
+	</p>
+
+</div>
+
 </body>
 </html>

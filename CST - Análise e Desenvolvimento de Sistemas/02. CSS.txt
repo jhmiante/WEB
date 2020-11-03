@@ -400,3 +400,25 @@ p {word-wrap:break-word;}
 
 ##########################
 
+
+CSS3 Font-Face
+Antes de CSS3, os web designers tinha que utilizar fontes instaladas previamente no computador do usuário.
+
+Com essa nova característica você pode disponibilizar o arquivo no servidor web, e ele será automaticamente baixado para o usuário, quando necessário.
+
+@font-face{
+font-family: myFirstFont;
+src: url(‘Sansation_Light.ttf’),
+url(‘Sansation_Light.eot’); /* IE9+ */
+}
+
+div
+{
+font-family:myFirstFont;
+}
+
+
+
+##########################
+
+
