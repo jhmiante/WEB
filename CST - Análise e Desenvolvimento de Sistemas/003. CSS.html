@@ -542,7 +542,26 @@ Sintaxe CSS</p>
 	</p>
 </div>
 
-<div></div>
+<div style="transform: translate(50px,100px);
+			-ms-transform: translate(50px,100px); /* IE 9 */
+			-webkit-transform: translate(50px,100px); /* Safari and Chrome */
+			-o-transform: translate(50px,100px); /* Opera */
+			-moz-transform: translate(50px,100px); /* Firefox */">
+	<h3>CSS3 Translate </h3>
+	<p>
+		Com CSS3 translate você pode mover de uma posição para a outra dependendo do parâmetros de posição passados da esquerda ( x ) e to top ( y )
+	</p>
+
+	<p>
+		div { <br>
+			transform: translate(50px,100px);<br>
+			-ms-transform: translate(50px,100px); /* IE 9 */<br>
+			-webkit-transform: translate(50px,100px); /* Safari and Chrome */<br>
+			-o-transform: translate(50px,100px); /* Opera */<br>
+			-moz-transform: translate(50px,100px); /* Firefox */<br>
+		}
+	</p>
+</div>
 
 </body>
 </html>

@@ -438,3 +438,13 @@ transform: rotate(30deg);
 ##########################
 
 
+CSS3 Translate
+Com CSS3 translate você pode mover de uma posição para a outra dependendo do parâmetros de posição passados da esquerda ( x ) e to top ( y )
+
+div {
+	transform: translate(50px,100px);
+	-ms-transform: translate(50px,100px); /* IE 9 */
+	-webkit-transform: translate(50px,100px); /* Safari and Chrome */
+	-o-transform: translate(50px,100px); /* Opera */
+	-moz-transform: translate(50px,100px); /* Firefox */
+	}
