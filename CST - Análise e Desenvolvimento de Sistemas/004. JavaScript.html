@@ -51,7 +51,84 @@
 		<li>Quando se abre o autocomplete da procura?</li>
 		<li>Quando se abrem os detalhes de um link? (aquilo que aparece do lado direito do link). “Um programa é uma lista de comandos (ou ações) que devem ser executados em ordem”</li>
 	</ul>
-	
+
+</div>
+
+<div>
+	<h2>Evento</h2>
+
+	<p>
+		Todo evento acontece em um elemento da página. <br>
+		E as reações aos eventos (programadas em JavaScript) são sempre registradas como propriedades dos elementos
+	</p>
+
+	<table border="1" width="800" class="text-center">
+		<tr class="titulo">
+			<td>Elementos </td>
+			<td>Evento </td>
+			<td>Propriedade que registra reação</td>
+		</tr>
+
+		<tr>
+			<td>Todos elementos que aparecem na página</td>
+			<td>
+				<table width="100%">
+					<tr>						
+						<td>Clique no elemento</td>
+					</tr>
+					<tr class="bg-blue">
+						<td>Mouse passando sobre</td>
+					</tr>
+				</table>
+			</td>
+			<td>
+				<table width="100%">
+					<tr>						
+						<td>onclick</td>
+					</tr>
+					<tr class="bg-blue">
+						<td>onmouseover</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr>
+			<td>input, select, textarea</td>
+			<td>
+				<table width="100%">
+					<tr>						
+						<td>onclick</td>
+					</tr>
+					<tr class="bg-blue">
+						<td>onmouseover</td>
+					</tr>
+				</table>
+			</td>
+			<td>
+				<table width="100%">
+					<tr>						
+						<td>onfocus</td>
+					</tr>
+					<tr class="bg-blue">
+						<td>onblur</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Form</td>
+			<td>Formulário sendo enviado</td>
+			<td>onsubmit</td>
+		</tr>
+
+		<tr class="bg-blue">
+			<td>Body</td>
+			<td>Página terminou de ser montada</td>
+			<td>onload</td>
+		</tr>
+	</table>
 </div>
 
 </body>

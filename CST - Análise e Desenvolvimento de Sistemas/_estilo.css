@@ -13,3 +13,14 @@ div
 		}
 
 h2 { text-shadow: 5px 5px 5px #00000F; }
+
+.titulo{
+	background-color: lightgray;
+	text-align: center;
+}
+
+.text-center{text-align: center;}
+
+.bg-blue{
+	background-color: lightblue;
+}

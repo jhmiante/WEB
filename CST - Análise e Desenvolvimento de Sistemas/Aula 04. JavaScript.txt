@@ -22,3 +22,23 @@ Peguemos o site do Google como exemplo:
  - Quando muda a cor de contorno do campo?
  - Quando se abre o autocomplete da procura?
  - Quando se abrem os detalhes de um link? (aquilo que aparece do lado direito do link). “Um programa é uma lista de comandos (ou ações) que devem ser executados em ordem”
+
+
+
+Evento
+
+Todo evento acontece em um elemento da página.
+E as reações aos eventos (programadas em JavaScript) são sempre registradas como propriedades dos elementos
+
+Elementos								Evento								Propriedade que registra reação
+
+Todos elementos que aparecem na página	Clique no elemento 					onclick
+										Mouse passando sobre				onmouseover
+
+input, select, textarea					onclick								onfocus
+										onmouseover							onblur
+
+Formulário								Formulário sendo enviado			onsubmit
+
+Body									Página terminou de ser montada		onload
+
