@@ -134,4 +134,33 @@ JavaScript é Case-Sensitive, logo as variáveis abaixo são todas diferentes:
 	QUantidade
 
 
-	
+
+Como trabalhar com dados
+Por exemplo, e se eu quiser transferir um dado de um lugar para outro?
+
+Operação de atribuição (operador =)
+
+x = y;
+a = b + c
+
+A variável x recebe o conteúdo da variável y
+
+A variável a recebe o RESULTADO da operação b + c
+
+Operadores Aritméticos para dados do tipo Número
+Para você verificar a tabela abaixo, declaramos uma variável x igual a 10
+
+var x=10;
+
+Operadores							EXEMPLO			RESULTADO
++		Adição						z = x + 10		z = 20
+-		Subtração					z = x - 10		z = 0
+*		Multiplicação				z = x * 10		z = 100
+/		Divisão						z = x / 10		z = 1
+%		Módulo (Resto da Divisão)	z = x % 3		z = 1
+++		Incremento Antes			++z				z = 11
+++		Incremento Depois			z++				z = 10
+--		Decremento Antes			--z				z = 9
+--		Decremento Depois			z--				z = 10
+
+
