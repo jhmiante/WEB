@@ -1,0 +1,15 @@
+div
+	{
+		border:2px solid #a1a1a1;
+		padding:10px 40px;
+		background:rgba(0,0,0,0.03);
+		width:800px;
+		border-radius:15px;
+		-moz-border-radius:15px; /* Firefox 3.6 and earlier */
+		-moz-box-shadow: 10px 10px 5px #888888; /* Firefox 3.6 and earlier */
+	 	box-shadow: 10px 10px 5px #888888;
+	 	margin-top: 25px;
+	 	margin-bottom: 25px;
+		}
+
+h2 { text-shadow: 5px 5px 5px #00000F; }
