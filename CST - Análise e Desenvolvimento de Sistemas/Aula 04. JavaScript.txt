@@ -42,3 +42,54 @@ Formulário								Formulário sendo enviado			onsubmit
 
 Body									Página terminou de ser montada		onload
 
+
+
+Como inserir um código JavaScript na página?
+
+Podemos inserir nossos códigos JavaScript das seguintes formas:
+
+Dentro de um marcador html
+Dentro do corpo da página <body>....</body>
+Dentro do cabeçalho <head>....</head> (Em um arquivo separado do html, este arquivo deve ter a extensão .js)
+Não se preocupe com os comandos em Js por hora, iremos abordar mais a frente.
+
+
+JavaScript em uma tag
+Quando inserimos um código JavaScript em uma tag, este é sempre associado a um evento.
+Note que, se o JavaScript estiver envolvido por aspas, só é possível usar apóstrofes no código (que, no JavaScript, tem a mesma função).
+
+Exemplo:
+
+<input type="button" value="Clique" onclick="this.value='Texto alterado'">
+
+
+JavaScript dentro do body e head
+Se fizermos uma comparação com CSS, esse modo de inserir JavaScript em uma página, seria o modo incorporado.
+Dentro do body ou do head, utilizamos a tag <script>. Note que os comandos podem ser executados sem a necessidade de eventos. Isso não é o mais comum, mas é um recurso que usaremos em nossos estudos.
+
+Exemplo:
+
+<p id="p-texto">Texto Escrito na Tag</p>
+
+<script type="text/javascript">
+document.getElementById("p-texto").innerHTML = "Texto Alterado pelo JavaScript";
+</script>
+----- ----- ----- ----- ----- ----- ----- -----
+
+Texto Alterado pelo JavaScript
+
+----- ----- ----- ----- ----- ----- ----- -----
+
+
+Arquivo JavaScript
+Assim como em CSS, também podemos criar um arquivo separado do html com nossos códigos em JavaScript, esse arquivo deve ser salvo com a extensão .js e é chamado no cabeçalho da página com a tag <script>
+
+Exemplo:
+
+<script type="text/javascript" src="arquivoJavaScript.js"></script>
+
+
+Obs. Podemos ter as três formas em um mesmo arquivo HTML, depende da necessidade.
+
+
+

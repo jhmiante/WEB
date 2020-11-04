@@ -131,5 +131,91 @@
 	</table>
 </div>
 
+<div>
+	<h2>Como inserir um código JavaScript na página?</h2>
+
+	<p>Podemos inserir nossos códigos JavaScript das seguintes formas:</p>
+
+	<ul>
+		<li> Dentro de um marcador html</li>
+		<li> Dentro do corpo da página &lt;body>....&lt;/body></li>
+		<li> Dentro do cabeçalho &lt;head>....&lt;/head> (Em um arquivo separado do html, este arquivo deve ter a extensão .js)</li>
+	</ul>
+
+	<p>Não se preocupe com os comandos em Js por hora, iremos abordar mais a frente.</p>
+
+	<br><hr>
+
+	<h3>JavaScript em uma tag</h3>
+
+	<p>
+		Quando inserimos um código JavaScript em uma tag, este é sempre associado a um evento. <br>
+		Note que, se o JavaScript estiver envolvido por aspas, só é possível usar apóstrofes no código
+		(que, no JavaScript, tem a mesma função).		
+	</p>
+
+	<p>
+		<strong>Exemplo:</strong>
+	</p>
+
+	<p>
+		&lt;input type="button" value="Clique" onclick="this.value='Texto alterado'">	
+	</p>
+
+	<input type="button" value="Clique" onclick="this.value='Texto alterado'">
+
+	<br><hr>
+
+	<h3>JavaScript dentro do body e head</h3>
+
+	<p>
+		Se fizermos uma comparação com CSS, esse modo de inserir JavaScript em uma página,
+		seria o modo incorporado. <br>
+		Dentro do body ou do head, utilizamos a tag &lt;script>. Note que os comandos podem ser
+		executados sem a necessidade de eventos. Isso não é o mais comum, mas é um recurso que
+		usaremos em nossos estudos. 
+	</p>
+
+	<p>
+		<strong>Exemplo:</strong>
+	</p>
+
+	<p>
+		&lt;p id="p-texto">Texto Escrito na Tag&lt;/p> <br><br>
+
+		&lt;script type="text/javascript"><br>
+			document.getElementById("p-texto").innerHTML = "Texto Alterado pelo JavaScript";<br>
+		&lt;/script> <br>
+	</p>
+
+	<p>----- ----- ----- ----- ----- ----- ----- -----</p>
+	<p id="p-texto">Texto Escrito na Tag</p>
+	<p>----- ----- ----- ----- ----- ----- ----- -----</p>
+
+	<script type="text/javascript">
+		document.getElementById("p-texto").innerHTML = "Texto Alterado pelo JavaScript";
+	</script>
+
+	<br><hr>
+
+	<h3>Arquivo JavaScript</h3>
+
+	<p>
+		Assim como em CSS, também podemos criar um arquivo separado do html com nossos
+		códigos em JavaScript, esse arquivo deve ser salvo com a extensão .js e é chamado no cabeçalho
+		da página com a tag &lt;script>
+	</p>
+
+	<p>
+		<strong>Exemplo:</strong>
+	</p>
+
+	<p>&lt;script type="text/javascript" src="arquivoJavaScript.js">&lt;/script></p>
+
+	<br><hr>
+
+	<h4>Obs. Podemos ter as três formas em um mesmo arquivo HTML, depende da necessidade.</h4>
+</div>	
+
 </body>
 </html>
