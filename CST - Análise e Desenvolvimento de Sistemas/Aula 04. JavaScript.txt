@@ -226,3 +226,34 @@ Para Comentários de uma única linha:
 
 
 
+Comandos e Funções
+
+Os Comandos sempre chamam Funções (por isso os Comandos também são chamados de ‘Chamadas de Funções’). E essas Funções são criadas assim:
+
+function <nome da função> ([<lista de parâmetros>])
+
+<bloco de instruções>
+
+Instruções Simples X Bloco de Instruções
+Para entender a função, primeiro precisamos saber o que significa essa [<lista de parâmetros>]
+
+Uma Instrução Simples sempre termina com “;”
+
+var x = 12;
+
+
+Um Bloco de Instruções começa com um “{“ e termina com um “}”. E dentro dele vai uma série de instruções:
+
+{
+var x = 12;
+alert(x);
+}
+
+Para que servem os Blocos de Instrução?
+Rotina de um comando – Função
+Execução condicional
+Repetição
+
+
+
+
