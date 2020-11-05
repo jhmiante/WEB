@@ -164,3 +164,35 @@ Operadores							EXEMPLO			RESULTADO
 --		Decremento Depois			z--				z = 10
 
 
+
+
+Juntando Textos - Concatenação de Strings
+
+Também usamos o operador “+” para concatenar Strings (textos) em JavaScript
+
+Exemplo:
+
+var x = “Bom ”;
+var y = “dia”;
+var z = x + y;
+
+// após a execução o resultado será: z = Bom dia
+
+Cuidado, quando usamos o operador “+” com números e textos, o resultado é sempre texto (o número é convertido automaticamente);
+
+var x=4;
+var y=“a”;
+var z=x+y; // o resultado será z=“4a”
+
+var x=“4”;
+var y=“4”;
+var z=x+y; //o resultado será z=“44”
+
+Por que saber sobre tipos é importante?
+Apesar de você não declarar os tipos das variáveis, o JavaScript sabe sempre o tipo de dado com que está trabalhando. E para ele, tudo que o usuário escreve é TEXTO, mesmo que o usuário escreva algarismos. Como para TEXTO o sinal de + significa uma coisa diferente do que para os NÚMEROS, isso pode ficar complicado.
+
+Por isso, se numa operação existe um NÚMERO e um TEXTO, o NÚMERO é sempre convertido e a operação ocorre como se tudo fosse TEXTO.
+
+
+
+
