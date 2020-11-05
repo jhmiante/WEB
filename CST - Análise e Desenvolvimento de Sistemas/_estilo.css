@@ -22,5 +22,5 @@ h2 { text-shadow: 5px 5px 5px #00000F; }
 .text-center{text-align: center;}
 
 .bg-blue{
-	background-color: lightblue;
+	background-color: rgba(50,50,255,0.05);
 }

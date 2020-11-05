@@ -257,3 +257,63 @@ Repetição
 
 
 
+Operadores
+
+Operadores de Comparação
+
+OPERADOR			NOME			EXEMPLO			RESULTADO
+==					Igual			x == y			Verdadeiro se x for igual a y
+!=					Diferente		x != y			Verdadeiro se x for diferente a y
+===					Idêntico		x === y			Verdadeiro se x for igual a y e do mesmo tipo
+<					Menor			x < y			Verdadeiro se x for menor a y
+>					Maior			x > y			Verdadeiro se x for maior a y
+<=					Menor ou Igual	x <= y			Verdadeiro se x for menor ou igual a y
+>=					Maior ou Igual	x >= y			Verdadeiro se x for maior ou igual a y
+
+
+
+Operadores Lógicos
+
+OPERADOR		DESCRIÇÃO									EXEMPLO (a = 3 e b = 5)
+&&				E Lógico: Retorna verdadeiro se ambas		a == 3 && b < 10 //retorna verdadeiro
+				expressões forem verdadeiras				a != 3 && b == 5 // retorna falso
+
+||				Ou Lógico: Retorna verdadeiro se uma 		a == 3 || b < 10 // retorna verdadeiro
+				das expressões forem verdadeiras			a!=3 || b==5 // retorna verdadeiro
+															a==1 || b==3 // retorna falso
+
+!				Não Lógico: inverte o resultado 			! (a==3) // retorna falso
+				se verdadeiro retorna falso e vice versa 	! (a!=3) // retorna verdadeiro
+
+
+
+Tabela de Resultado Operador &&
+
+TESTE 1			TESTE 2			RESULTADO &&
+Verdadeiro		Verdadeiro		Verdadeiro
+Verdadeiro		Falso			Falso
+Falso			verdadeiro		Falso
+Falso			Falso			Falso
+
+
+
+Tabela de Resultado Operador !!
+
+TESTE 1			TESTE 2			RESULTADO &&
+Verdadeiro		Verdadeiro		Verdadeiro
+Verdadeiro		Falso 			Verdadeiro
+Falso			Verdadeiro		Verdadeiro
+Falso			Falso			Falso
+
+
+
+Tabela de Resultado Operador !
+
+TESTE			RESULTADO &&
+Verdadeiro		Falso
+Falso			Verdadeiro
+
+
+
+
+
