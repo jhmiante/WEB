@@ -196,3 +196,33 @@ Por isso, se numa operação existe um NÚMERO e um TEXTO, o NÚMERO é sempre c
 
 
 
+Conversão de tipos
+
+
+Como comentado anteriormente, quando o usuário entra com dados de qualquer forma (veremos uma forma mais a frente), os valores lidos são sempre textos. Caso seja necessário realizar alguma operação matemática com os valores lidos, precisamos inicialmente convertêlos em números. Para isso temos duas funções em JavaScript que convertem para inteiro ou para float (número com casas decimais).
+
+Para converter um texto em número inteiro utilizado a função parseInt.
+
+variável = parseInt (valor [, base]);
+
+Para converter um texto em número real (float), utilizamos a função parseFloat.
+
+variável = parseFloat (valor);
+
+
+É uma boa prática inserirmos comentários em nossos códigos, em JavaScript podemos fazer isso de duas formas:
+
+Para Comentários de várias linhas:
+
+/* Inserimos aqui
+Nossos comentários
+Em várias linhas
+*/
+
+Para Comentários de uma única linha:
+
+//Aqui inserimos somente uma linha de comentário
+
+
+
+
