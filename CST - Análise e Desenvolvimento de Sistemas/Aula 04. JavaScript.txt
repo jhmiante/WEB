@@ -317,3 +317,20 @@ Falso			Verdadeiro
 
 
 
+Estruturas de decisão – execução condicional
+
+São blocos de código que serão executados somente se uma dada condição for satisfeita.
+
+Na nossa rotina, estamos sempre tomando decisões, por exemplo:
+
+se estiver chovendo levo o guarda-chuva.
+se for final de semana e estiver sol irei para a praia.
+Temos disponível em JavaScript as seguintes estruturas de decisões:
+
+if
+if ... else
+if ... else if ... else...
+switch
+
+
+
