@@ -769,7 +769,7 @@
 		&lt;script type="text/javascript"> <br> <br>
 
 		console.log("Condicional IF ... ELSE IF ... ELSE") <br> <br>
-		
+
 		var data = new Date() <br>
 		var hora = data.getHours() <br> <br>
 
@@ -789,9 +789,84 @@
 
 		&lt;/script>
 
-		<p>No exemplo acima, irá verificar a hora atual, caso seja antes das 12:00 irá retornar "Bom dia", caso seja após 12:00 e antes das 18:00, irá retornar "Boa tarde" e caso seja após 18:00 irá retornar "Boa noite"</p>
+		
 	</div>
+		<p>
+			No exemplo acima, irá verificar a hora atual, caso seja antes das 12:00 irá retornar "Bom dia", caso seja após 12:00 e antes das 18:00, irá retornar "Boa tarde" e caso seja após 18:00 irá retornar "Boa noite"
+		</p>
+	<hr>
 
+	<h3>Estrutura de decisão switch ... case</h3>
+
+	<p>Essa condição verifica o valor de um caso, se for aceito irá ler o bloco de código daquele caso</p>
+
+	<p>
+		<strong>
+			SINTAXE:	
+		</strong>
+	</p>
+
+	<p>
+		switch (valor) { <br>
+			case valor1:<br>
+			//instruções 1<br>
+			break<br><br>
+
+			case valor2:<br>
+			//instruções 2<br>
+			break<br><br>
+
+			case valor3:<br>
+			//instruções 3<br>
+			break<br><br>
+
+			default:<br>
+			//instruções padrão<br>
+			}
+	</p>
+
+	<p>
+		Para cada caso devemos colocar o comando break, este comando irá finalizar o caso e evitar que o caso posterior seja executado.
+	</p>
+
+	<p>
+		O default é opcional, ele é executado quando nenhum caso anterior é acionado.
+	</p>
+
+	<p>
+		Não podemos fazer comparações no case, como x > y, por exemplo.
+	</p>
+
+	<div class="CodClass">
+		
+		&lt;script type="text/javascript"> <br> <br>
+
+		console.log("Condicional SWITCH CASE") <br> <br>
+
+		var Data = new Date(); <br>
+		var diaDaSemana = Data.getDay(); <br> <br>
+
+		switch (diaDaSemana) <br>
+			{ <br>
+				case 0: <br>
+					console.log("Domingo de descanso merecido :)") <br>
+					break <br> <br>
+
+				case 5: <br>
+					console.log("Opa... Sextou U.u") <br>
+					break <br> <br>
+
+				case 6: <br>
+					console.log("Que maravilha... Sabadão chegou :p") <br>
+					break <br> <br>
+
+				default: <br>
+					console.log("Semana Longaaaaaaaa....") <br>
+			} <br> <br>
+
+
+		&lt;/script>
+	</div>
 </div>
 
 

@@ -408,3 +408,64 @@ if (hora < 12 )
 
 ]
 
+
+
+
+Estrutura de decisão switch ... case
+
+Essa condição verifica o valor de um caso, se for aceito irá ler o bloco de código daquele caso
+
+SINTAXE:
+
+switch (valor) {
+case valor1:
+//instruções 1
+break
+
+case valor2:
+//instruções 2
+break
+
+case valor3:
+//instruções 3
+break
+
+default:
+//instruções padrão
+}
+
+Para cada caso devemos colocar o comando break, este comando irá finalizar o caso e evitar que o caso posterior seja executado.
+
+O default é opcional, ele é executado quando nenhum caso anterior é acionado.
+
+Não podemos fazer comparações no case, como x > y, por exemplo.
+
+
+[
+
+console.log("Condicional SWITCH CASE")
+
+var Data = new Date();
+var diaDaSemana = Data.getDay(); //Retorna o dia da semana, sendo 0 Domingo - 1 Segunda - 2 Terça ... 6 Sábado
+
+switch (diaDaSemana)
+	{
+		case 0:
+			console.log("Domingo de descanso merecido :)")
+			break
+
+		case 5:
+			console.log("Opa... Sextou U.u")
+			break
+
+		case 6:
+			console.log("Que maravilha... Sabadão chegou :p")
+			break
+
+		default:
+			console.log("Semana Longaaaaaaaa....")
+	}
+
+]
+
+
