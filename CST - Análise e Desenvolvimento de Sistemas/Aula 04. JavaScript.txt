@@ -382,3 +382,29 @@ if (a == 10)
 	}
 
 
+Estrutura de decisão if ... else if ... else
+
+Irá verificar uma condição, se for aceita irá ler o bloco de código if, caso não seja aceita irá realizar um novo teste, caso aceito irá ler o bloco else if, se não for aceito irá ler o bloco de código else
+
+Podemos encadiar quantos else if forem necessário
+
+[
+
+var data = new Date()
+var hora = data.getHours()
+
+if (hora < 12 ) 
+	{
+		console.log("Bom dia!!!")
+	}
+	else if (hora < 18)
+	{
+		console.log("Boa tarde!!!")
+	}
+	else
+	{
+		console.log("Boa Noite!!!")
+	}
+
+]
+
