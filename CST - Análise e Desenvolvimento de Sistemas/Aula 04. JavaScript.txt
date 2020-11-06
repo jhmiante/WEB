@@ -334,3 +334,22 @@ switch
 
 
 
+Estrutura de decisão if
+
+Irá verificar uma condição, se for aceita irá ler o bloco de código, caso não seja aceita não irá ler o bloco de código
+
+<script type="text/javascript">
+
+	console.log("Condicional IF")
+
+	var Num = 5;
+
+	if (Num > 4) {
+	console.log("Teste IF aceito, lendo o Bloco IF")
+	}
+
+	if (Num == 10) {
+	console.log("Teste IF não aceito, Não irá o Bloco IF")
+	}
+
+</script>
