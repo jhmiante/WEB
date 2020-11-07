@@ -77,3 +77,13 @@ switch (diaDaSemana)
 			console.log("Semana Longaaaaaaaa....")
 	}
 
+
+
+console.log("Estrutura de Repetição FOR")
+
+var cont;
+
+for (cont = 1; cont <= 10 ; cont++)
+	{
+		console.log("Repetição Número: " + cont + "/10");
+	}

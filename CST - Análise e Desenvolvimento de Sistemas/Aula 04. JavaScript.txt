@@ -469,3 +469,36 @@ switch (diaDaSemana)
 ]
 
 
+
+Estruturas de repetição
+
+Utilizadas quando necessitamos repetir um bloco de instruções. Podemos executar um laço de repetição com um número específico de vezes, ou enquanto uma condição for verdadeira. Essas estruturas também são conhecidas como laço de repetição ou loop. Em JavaScript veremos for e while.
+
+
+
+Estrutura de repetição FOR
+Utilizada quando sabemos o número de repetições que serão feitas.
+
+Sintaxe:
+
+for (valor inicial; condição; incremento/decremento)
+{
+//instruções que serão repetidas
+}
+
+
+[
+
+	console.log("Estrutura de Repetição FOR")
+
+	var cont;
+
+	for (cont = 1; cont <= 10 ; cont++)
+		{
+			console.log("Repetição Número: " + cont + "/10");
+		}
+
+]
+
+
+
