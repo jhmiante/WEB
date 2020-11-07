@@ -101,3 +101,44 @@ while (cont <= contarFim)
 	console.log("Repetição While Número:" + cont + "/" + contarFim);
 	cont++;
 	}
+
+
+
+console.log("CRIANDO VETORES EM JAVASCRIPT")
+
+//vetor sem tamanho definido
+var vetor1 = new Array();
+
+//vetor com tamanho definido
+var vetor2=new Array(3);
+
+//vetor com posições e valores definidos
+var vetor3=new Array("maça","banana","morango");
+
+//vetor – declaração abreviada
+var vetor4 = ["limão", "pera", "uva", "kiwi"];
+
+
+var frutas = new Array();
+ 
+ frutas[0]="maça";
+ frutas[1]="banana";
+ frutas[2]="morango";
+
+ console.log(frutas[2]);
+
+console.log("REPETIÇÃO COM VETOR - 	REPETIÇÃO COM VALOR FIXO")
+
+for (var i = 0; i <= 2; i++) 
+	{
+	 	console.log(frutas[i])
+	}
+
+
+
+console.log("REPETIÇÃO COM VETOR - 	REPETIÇÃO COM TAMANHO DO VETOR")
+
+for (var i = 0; i < frutas.length; i++) 
+	{
+	 	console.log(frutas[i])
+	}

@@ -948,7 +948,128 @@
 
 </div>
 
+<div>
+	<h2>Vetores</h2>
 
+	<p>
+		Um Vetor é uma coleção de espaços na memória, com posições definidas. Podemos atribuílo a uma variável, assim ele ganha um nome.
+	</p>
+	<p>
+		Em uma representação gráfica podemos visualizar um vetor da seguinte forma:
+	</p>
+
+	<img src="img/vetor.png" border="1">
+
+	<p>
+		<strong>Vetores em JavaScript</strong>
+	</p>
+
+	<ul>
+		<li>Para criar um vetor em JavaScript utilizamos o objeto Array, podemos criar um vetor de 4 formas:</li>
+		<li>Sem tamanho fixo (obviamente vazio, sem valores);</li>
+		<li>Com tamanho fixo (cada posição será vazia também);</li>
+		<li>Com valores (indicamos os dados que irão ser armazenados em cada posição);</li>
+		<li>Com valores de forma abreviada;</li>
+	</ul>
+		
+	<br><br>
+	<p><strong>Criando Vetores em Js</strong></p>
+
+	<div class="CodClass">
+		
+		&lt;script type="text/javascript"> <br> <br>
+
+		//vetor sem tamanho definido<br>
+		var vetor1 = new Array();<br><br>
+
+		//vetor com tamanho definido<br>
+		var vetor2=new Array(3);<br><br>
+
+		//vetor com posições e valores definidos<br>
+		var vetor3=new Array(“maça”,“banana”,“morango”);<br><br>
+
+		//vetor – declaração abreviada<br>
+		var vetor4 = [“limão”, “pera”, “uva”, “kiwi”];		<br><br>
+
+		&lt;/script>
+
+	</div>
+
+	<p><strong> OBS: </strong>em todos os casos acima, podemos inserir mais posições sempre que necessário.</p>
+
+	<p>
+		Para visualizarmos ou atribuirmos um valor para um vetor devemos acessar cada posição através do índice, este índice deve ficar entre colchetes “[...]”.
+	</p>
+
+	<div class="CodClass">
+		
+		&lt;script type="text/javascript"> <br> <br>
+
+		var frutas = new Array();<br><br>
+ 
+		 frutas[0]=“maça“;<br>
+		 frutas[1]=“banana“;<br>
+		 frutas[2]=“morango“;<br><br>
+
+		 console.log(frutas[2]);	<br><br>	
+
+		&lt;/script>
+
+	</div>
+
+	<p>
+		Em quase todos os casos em que trabalhamos com vetores, utilizamos uma estrutura de repetição para acessar suas posições, a mais comum seria a estrutura for, porém também podemos usar o while.
+	</p>
+
+	<div class="CodClass">
+		
+		&lt;script type="text/javascript"> <br> <br>
+
+		var frutas = new Array();<br><br>
+ 
+		 frutas[0]=“maça“;<br>
+		 frutas[1]=“banana“;<br>
+		 frutas[2]=“morango“;<br><br>
+
+		 console.log(frutas[2]);	<br><br>
+
+		 for (var i = 0; i <= 2; i++) <br>
+			{<br>
+			 	console.log(frutas[i])<br>
+			}<br><br>
+
+		&lt;/script>
+
+	</div>
+
+	<h3>O tamanho de um vetor</h3>
+
+	<p>
+		Todo vetor tem a propriedade length, que guarda o número de seus elementos e para interromper o laço, utiliza-se a instrução break.
+	</p>
+
+	<div class="CodClass">
+		
+		&lt;script type="text/javascript"> <br> <br>
+
+		var frutas = new Array();<br><br>
+ 
+		 frutas[0]=“maça“;<br>
+		 frutas[1]=“banana“;<br>
+		 frutas[2]=“morango“;<br><br>
+
+		 console.log(frutas[2]);	<br><br>
+
+		 for (var i = 0; i < frutas.length; i++)  <br>
+			{<br>
+			 	console.log(frutas[i])<br>
+			}<br><br>
+
+		&lt;/script>
+
+	</div>
+
+</div>
 
 <script type="text/javascript" src="JsFile.js"></script>
 </body>

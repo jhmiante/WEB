@@ -527,3 +527,86 @@ while (condição)
 		}
 
 ]
+
+
+Vetores
+Um Vetor é uma coleção de espaços na memória, com posições definidas. Podemos atribuílo a uma variável, assim ele ganha um nome.
+
+Em uma representação gráfica podemos visualizar um vetor da seguinte forma:
+
+INDICE	[0]			[1]			[2]			...
+VETOR 	[valor 1]	[valor 2]	[valor 3]	...
+
+Vetores em JavaScript
+
+Para criar um vetor em JavaScript utilizamos o objeto Array, podemos criar um vetor de 4 formas:
+Sem tamanho fixo (obviamente vazio, sem valores);
+Com tamanho fixo (cada posição será vazia também);
+Com valores (indicamos os dados que irão ser armazenados em cada posição);
+Com valores de forma abreviada;
+
+
+Criando Vetores em Js
+
+[
+
+	<script type="text/javascript">
+
+	//vetor sem tamanho definido
+	var vetor1 = new Array();
+
+	//vetor com tamanho definido
+	var vetor2=new Array(3);
+
+	//vetor com posições e valores definidos
+	var vetor3=new Array(“maça”,“banana”,“morango”);
+
+	//vetor – declaração abreviada
+	var vetor4 = [“limão”, “pera”, “uva”, “kiwi”];
+
+	</script>
+
+]
+
+OBS: em todos os casos acima, podemos inserir mais posições sempre que necessário.
+
+Para visualizarmos ou atribuirmos um valor para um vetor devemos acessar cada posição através do índice, este índice deve ficar entre colchetes “[...]”.
+
+[
+	<script type="text/javascript">
+
+	var frutas = new Array();
+
+	frutas[0]=“maça“;
+	frutas[1]=“banana“;
+	frutas[2]=“morango“;
+
+	console.log(frutas[2]);
+
+	</script>
+
+]
+
+
+Em quase todos os casos em que trabalhamos com vetores, utilizamos uma estrutura de repetição para acessar suas posições, a mais comum seria a estrutura for, porém também podemos usar o while.
+
+[
+	<script type="text/javascript">
+
+	var frutas = new Array();
+
+	frutas[0]=“maça“;
+	frutas[1]=“banana“;
+	frutas[2]=“morango“;
+
+	console.log(frutas[2]);
+
+	for (var i = 0; i <= 2; i++) 
+		{
+		 	console.log(frutas[i])
+		}
+
+	</script>
+
+]
+
