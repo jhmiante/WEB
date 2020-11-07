@@ -87,3 +87,17 @@ for (cont = 1; cont <= 10 ; cont++)
 	{
 		console.log("Repetição Número: " + cont + "/10");
 	}
+
+
+
+
+console.log("Estrutura de Repetição WHILE")
+
+var contarFim = 10;
+var cont = 1;
+
+while (cont <= contarFim)
+	{
+	console.log("Repetição While Número:" + cont + "/" + contarFim);
+	cont++;
+	}

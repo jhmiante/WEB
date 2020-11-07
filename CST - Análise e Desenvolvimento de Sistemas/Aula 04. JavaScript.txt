@@ -502,3 +502,28 @@ for (valor inicial; condição; incremento/decremento)
 
 
 
+Estrutura de repetição WHILE
+Executa um bloco de instruções enquanto uma certa condição for verdadeira.
+
+Sintaxe:
+
+while (condição)
+	{
+	//instruções
+	//alteração do valor da condição
+	}
+
+[
+
+	console.log("Estrutura de Repetição WHILE")
+
+	var contarFim = 10;
+	var cont = 1;
+
+	while (cont <= contarFim)
+		{
+		console.log("Repetição While Número:" + cont + "/" + contarFim);
+		cont++;
+		}
+
+]
