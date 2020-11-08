@@ -1,0 +1,20 @@
+O que é jQuery
+
+
+jQuery é uma biblioteca JavaScript de código open source, fornecida gratuitamente. Sua API é utilizada, por exemplo, como funções navegação, criação de animações e efeitos, funções para registrar/tratar eventos e funções para desenvolver aplicações AJAX.
+
+Para utilizar as funcionalidades do jQuery, basta somente incluir na tag script, definindo o source, onde será apontado o arquivo com extensão js. Esse arquivo pode ser endereço, pela web, ou feito o download do arquivo para o próprio projeto.
+
+Dentro da Tag head insira o caminho:
+
+[
+
+<head>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+</head>
+
+]
+
+No exemplo acima estaremos utilizando a versão 1.9.1 do jQuery
+
+Ou pode baixar pelo link https://jquery.com/download/
