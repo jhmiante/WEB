@@ -18,3 +18,61 @@ Dentro da Tag head insira o caminho:
 No exemplo acima estaremos utilizando a versão 1.9.1 do jQuery
 
 Ou pode baixar pelo link https://jquery.com/download/
+
+
+Seletores
+A sintaxe do jQuery é bastante simples. Resume-se a selecionar um elemento ou um grupo de elementos e realizar uma ou mais operações.
+
+Para utilizar o jQuery, usamos as variáveis $ e jQuery, mas é muito mais comum usarmos o $
+
+Sintaxe
+var x = $(Seletor);
+x.acao();
+
+$(Seletor).acao();
+
+var y = jQuery(Seletor);
+y.acao();
+
+jQuery(Seletor).acao();
+Seletores Básicos
+Vejamos alguns elementos utilizados para ter acesso aos elementos das páginas
+
+$(“*”) – seleciona todos os elementos da página;
+$(“tipo_do_elemento”) – selecionada todos os elementos de um tipo escolhido, basta colocar o nome do elemento entre as aspas;
+$(“span”) – seleciona todos os elementos do tipo span;
+$(“#id_do_elemento”) – seleciona o elemento pelo id. Um elemento do html possui um atributo id, esse atributo id é informado juntamente com o caracter # para o jQuery ter acesso;
+$(“.classX”) - Selecionando elementos pela classe: dentro de um seletor, o caractere ponto (.) refere-se à classe (atributo “class” da tag HTML).
+
+Para utilizar as funcionalidades do jQuery, o documento deve estar todo carregado, caso o código Js esteja carregado antes da contrução do HTML (dentro do Head por exemplo), usamos a instrução javascript.
+
+$(document).ready(function(){
+
+    //Digite o código Js e jQuery aqui
+
+  }
+
+Ou podemos utilizar a tag <script> antes do fechamento da tag <body>
+
+<--!Código HTML -->
+
+<h3>Trabalhando com jQuery</h3>
+<h3>Trabalhando com jQuery</h3>
+<h3>Trabalhando com jQuery</h3>
+//Código jQuery
+
+$("h3.ClassX").text("Combinando Seletores!");
+No arquivo HTML foi criado 3 elementos h3 com a classe "ClassX" e inserido o texto "Trabalhando com jQuery"
+
+Com o jQuery foi alterado esse texto para "Combinando Seletores!"
+
+
+
+SAÍDA...
+
+Combinando Seletores!
+Combinando Seletores!
+Combinando Seletores!
+
+
+***Importante: O jQuery é CaseSensitive, então a palavra class é diferente da palavra Class

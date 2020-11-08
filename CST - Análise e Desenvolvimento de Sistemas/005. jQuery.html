@@ -8,7 +8,7 @@
 	
 	<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
 
-	<script src="_AulaJQuery.js"></script>
+
 	
 </head>
 <body>
@@ -42,6 +42,83 @@
 
 	</div>
 
+	<div>
+		<h2>Seletores</h2>
 
+		<p>
+			A sintaxe do jQuery é bastante simples. Resume-se a selecionar um elemento ou um grupo de elementos e realizar uma ou mais operações. 
+		</p>
+		<p>
+			Para utilizar o jQuery, usamos as variáveis $ e jQuery, mas é muito mais comum usarmos o $
+		</p>
+
+		<hr>
+		<h4>Sintaxe</h4>
+		<hr>
+		<p>
+			var x = $(Seletor); <br>
+			x.acao(); <br><br>
+
+			$(Seletor).acao(); <br>
+			 <br>
+			var y = jQuery(Seletor); <br>
+			y.acao(); <br><br>
+
+			jQuery(Seletor).acao(); <br>			
+
+		</p>
+		<hr>
+		</div>
+
+		<div>
+		<h3>Seletores Básicos</h3>
+
+		<p>
+			Vejamos alguns elementos utilizados para ter acesso aos elementos das páginas
+		</p>
+
+		<ul>
+			<li>$(“*”) – seleciona todos os elementos da página;</li>
+			<li>$(“tipo_do_elemento”) – selecionada todos os elementos de um tipo escolhido, basta colocar o nome do elemento entre as aspas;</li>
+			<li>$(“span”) – seleciona todos os elementos do tipo span;</li>
+			<li>$(“#id_do_elemento”) – seleciona o elemento pelo id. Um elemento do html possui um atributo id, esse atributo id é informado juntamente com o caracter # para o jQuery ter acesso;</li>
+			<li>$(“.classX”) - Selecionando elementos pela classe: dentro de um seletor, o caractere ponto (.) refere-se à classe (atributo “class” da tag HTML).</li>
+		</ul>
+
+		<p>Para utilizar as funcionalidades do jQuery, o documento deve estar todo carregado, caso o código Js esteja carregado antes da contrução do HTML (dentro do Head por exemplo), usamos a instrução javascript.</p>
+		<p class="color-red">$(document).ready(function(){ <br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;//Digite o código Js e jQuery aqui <br><br>
+		&nbsp;&nbsp;}</p>
+
+		<p>
+			Ou podemos utilizar a tag <span class="color-red">&lt;script></span> antes do fechamento da tag <span class="color-red">&lt;body></span>
+		</p>
+
+		<hr>
+
+		<div class="CodHtml">
+			&lt;--!Código HTML --> <br><br>
+			&lt;h3>Trabalhando com jQuery&lt;/h3> <br>
+			&lt;h3>Trabalhando com jQuery&lt;/h3> <br>
+			&lt;h3>Trabalhando com jQuery&lt;/h3> <br>
+		</div>
+
+		<div class="CodClass">
+			//Código jQuery <br><br>
+			$("h3.ClassX").text("Combinando Seletores!");
+		</div>
+
+		<p>No arquivo HTML foi criado 3 elementos h3 com a classe "ClassX" e inserido o texto "Trabalhando com jQuery"</p>
+		<p>Com o jQuery foi alterado esse texto para "Combinando Seletores!"</p>
+
+		<h3 class="ClassX">Trabalhando com jQuery</h3>
+		<h3 class="ClassX">Trabalhando com jQuery</h3>
+		<h3 class="ClassX">Trabalhando com jQuery</h3>
+
+		<hr>
+		<p class="color-red">***Importante: O jQuery é CaseSensitive, então a palavra class é diferente da palavra Class</p>
+	</div>
+
+	<script src="_AulaJQuery.js"></script>
 </body>
 </html>

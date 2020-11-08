@@ -24,11 +24,23 @@ h2 { text-shadow: 5px 5px 5px #00000F; }
 	background-color: rgba(50,50,255,0.05);
 }
 
+.color-red{color: red;}
+
 .CodClass 
 	{
 		border:2px solid #a1a1a1;
 		color: white;
 		background-color: black;
+		width: 600px;
+		border-radius:5px;
+		-moz-border-radius:5px; /* Firefox 3.6 and earlier */
+	}
+
+.CodHtml
+	{
+		border:2px solid #a1a1a1;
+		color: green;
+		background-color: white;
 		width: 600px;
 		border-radius:5px;
 		-moz-border-radius:5px; /* Firefox 3.6 and earlier */
