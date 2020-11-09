@@ -119,6 +119,64 @@
 		<p class="color-red">***Importante: O jQuery é CaseSensitive, então a palavra class é diferente da palavra Class</p>
 	</div>
 
+	<div>
+		<h2>Seletores em Atributos</h2>
+		<p>			
+			Com jQuery podemos selecionar ou ter acesso aos elementos de acordo com os atributos do html. Para ter o acesso, basta informar o atributo, o operador e o valor, dentro de chaves ([]).
+			<br><br>
+			$([atributo operador valor])
+		</p>
+
+		<hr>
+
+		<h2>Operadores</h2>
+
+		<table border="1" width="600" class="text-center">
+			<tr class="titulo">
+				<td>Operador</td>
+				<td>Significado</td>
+			</tr>
+
+			<tr>
+				<td>=</td>
+				<td>O valor informado precisa ser igual ao valor do atributo</td>	
+			</tr>
+
+			<tr class="bg-blue">
+				<td>!=</td>
+				<td>O valor informado precisa ser diferente do valor do atributo</td>
+			</tr>
+
+			<tr>
+				<td>^=</td>
+				<td>O valor do atributo precisa começar ou ser igual ao valor informado.</td>	
+			</tr>
+
+			<tr class="bg-blue">
+				<td>$=</td>
+				<td>O valor do atributo precisa terminar ou ser igual ao valor informado.</td>
+			</tr>
+
+			<tr>
+				<td>~=</td>
+				<td>O valor do atributo precisa conter o valor informado</td>	
+			</tr>			
+		</table>
+
+		<h4>Exemplo:</h4>
+
+		<ul>
+			<li>
+				$(“[name='txtNome']”) => seleciona todos os elementos cujo atributo ‘name’ seja igual txtNome
+			</li>
+			<br>
+			<li>
+				$(“[type='text'][name='txtInfo']”) => selecionada e define o valor de todos os elementos do tipo ‘input’, cujo atributo nome seja igual a ‘txtInfo’.
+			</li>
+		</ul>
+
+	</div>
+
 	<script src="_AulaJQuery.js"></script>
 </body>
 </html>

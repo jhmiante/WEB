@@ -76,3 +76,28 @@ Combinando Seletores!
 
 
 ***Importante: O jQuery é CaseSensitive, então a palavra class é diferente da palavra Class
+
+
+
+Seletores em Atributos
+
+Com jQuery podemos selecionar ou ter acesso aos elementos de acordo com os atributos do html. Para ter o acesso, basta informar o atributo, o operador e o valor, dentro de chaves ([]).
+
+$([atributo operador valor])
+
+
+
+Operadores
+
+Operador	Significado
+	=		O valor informado precisa ser igual ao valor do atributo
+	!=		O valor informado precisa ser diferente do valor do atributo
+	^=		O valor do atributo precisa começar ou ser igual ao valor informado.
+	$=		O valor do atributo precisa terminar ou ser igual ao valor informado.
+	~=		O valor do atributo precisa conter o valor informado
+Exemplo:
+$(“[name='txtNome']”) => seleciona todos os elementos cujo atributo ‘name’ seja igual txtNome
+
+$(“[type='text'][name='txtInfo']”) => selecionada e define o valor de todos os elementos do tipo ‘input’, cujo atributo nome seja igual a ‘txtInfo’.
+
+
