@@ -31,3 +31,20 @@ $(document).ready(function(){
 		$("#d2").html("Programação Web ");
 	});
 });
+
+var typeTexto = 1;
+
+$(document).ready(function(){
+	$("#btn1").click(function(){
+		if (typeTexto == 1) {
+			$("#texto").css("background","lightblue");
+			$("#texto").css("color","black");
+			typeTexto = 0;
+		}else{
+			$("#texto").css("background","white");
+			$("#texto").css("color","red");
+			typeTexto = 1;
+		}
+		
+	});
+});

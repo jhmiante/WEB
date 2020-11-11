@@ -294,7 +294,47 @@
 
 	</div>
 
-	<div class="DivClass"></div>
+	<div class="DivClass">
+		
+		<h2>jQuery - CSS</h2>
+
+		<p>
+			Com jQuery também é possível trabalhar com CSS, ou seja, ter acesso às propriedades de alteração do estilo.
+		</p>
+
+		<div class="CodHtml">
+			&lt;div id="texto" class="Exemplo">Análise e Desenvolvimento de Sistemas&lt;/div><br><br>
+			&lt;div style="width: 250px" id="btn1" class="DivClass"><br>
+			Clique aqui para Alterar o Estilo CSS <br>
+			&lt;/div>
+		</div>
+
+		<div class="CodClass">			
+			var typeTexto = 1;<br><br>
+
+			$(document).ready(function(){<br>
+				&nbsp;&nbsp;$("#btn1").click(function(){<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;if (typeTexto == 1) {<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$("#texto").css("background","lightblue");<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$("#texto").css("color","black");<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;typeTexto = 0;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;}else{<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$("#texto").css("background","white");<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$("#texto").css("color","red");<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;typeTexto = 1;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;}<br>					
+				&nbsp;&nbsp;&nbsp;&nbsp;});<br>
+			&nbsp;&nbsp;});<br>
+		</div>
+
+		<h4>Resultado:</h4>
+
+		<div id="texto" class="Exemplo">
+			Análise e Desenvolvimento de Sistemas
+		</div>
+
+		<div style="width: 250px" id="btn1" class="DivClass">Clique aqui para Alterar o Estilo CSS</div>
+	</div>
 
 	<script src="_AulaJQuery.js"></script>
 </body>
