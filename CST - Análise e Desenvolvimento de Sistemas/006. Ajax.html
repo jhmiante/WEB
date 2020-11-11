@@ -16,8 +16,112 @@
 	<h1 class="text-center">Ajax</h1>
 
 	<div class="DivClass">
-		
+		<h2>Armazenamento de informação em JS</h2>
+
+		<p>
+			Basicamente temos duas formas de armazenar dados no cliente:
+		</p>
+
+        <ul>
+			<li>Através de cookies (modelo bem antigo de armazenamento de dados no cliente)</li>
+			<li>API Web Storage (API disponibilizada com o surgimento do HTML5)</li>
+        </ul>
+
+		<p>
+			Embora a API Web Storage tenha diversas vantagens sobre o uso de cookies, iremos abordar os dois conteúdos, 
+			visto que também podemos manipular cookies em linguagens server-side e porque muitos projetos ainda utilizam esse recurso.
+		</p>
 	</div>
+
+    <div class="DivClass">
+		<h2>Cookies</h2>
+
+		<p>
+			São informações gravadas por uma aplicação web na máquina cliente. Para cada domínio
+			da aplicação, é gerado um arquivo txt, que contém os cookies.
+		</p>
+		<p>Os cookies são formados por um par composto de:</p>
+		<ul>
+			<li>Nome do cookie</li>
+			<li>Valor do cookie</li>
+		</ul>
+
+		<p>
+			Os cookies são mantidos na máquina cliente enquanto seu prazo de “vida” não expirar ou
+			enquanto o usuário não limpá-los através do navegador
+		</p>
+
+		<p>
+			Como padrão, podemos criar cookies de até 10Kb. Isso quer dizer que podemos ter um
+			cookie de 10k ou 50 cookies no máximo, que totalizam juntos 10k. Esses valores correspondem
+			aos cookies de um determinado domínio. Esses valores podem variar conforme o browser.
+		</p>
+        
+		<hr />
+		
+		<h3>Para que usar cookies?</h3>
+
+		<p>Para gravar algumas informações que, posteriormente, poderemos usar em nossa aplicação web.</p>
+
+		<p>
+			Em um exemplo clássico, podemos trabalhar com os cookies em um e-commerce. Enquanto
+			o usuário está fazendo a escolha dos pedidos e colocando-os no carrinho de compra, podemos
+			armazenar os dados dos produtos em cookies. Após a finalização da compra, gravamos os
+			dados em um banco de dados e limpamos o cookie.
+		</p>
+
+		<p>Vamos testar essa ideia usando o site do Submarino.</p>
+
+		<p>
+			Qualquer site pode gravar cookies em sua máquina, desde que essa permissão esteja
+			habilitada em seu navegador.
+		</p>
+
+		<p>Um cookie não pode apagar arquivos em sua máquina e muito menos “roubar” suas senhas.</p>
+
+		<p>
+			Um site só pode acessar os cookies gravados pelo seu domínio, ou seja, uma aplicação só
+			pode acessar os cookies gravados por ela.
+		</p>
+
+        <hr />
+
+		<h3>Como é composto um cookie?</h3>
+
+		<h4>Um cookie é composto por:</h4>
+
+		<ul>
+			<li>Nome</li>
+			<li>Valor</li>
+			<li>Tempo (tempo de validade do cookie)</li>
+		</ul>
+
+		<p>Podemos manipular os cookies em JavaScript através do comando:</p>
+        <p><i>document.cookie</i></p>
+
+		<h4>Um cookie é composto basicamente por:</h4>
+
+        <p><i>NAME = Valor; EXPIRES = Data; PATH = Caminho; DOMAIN = Nome_Dominio.</i></p>
+
+		<p><b>NAME:</b> é uma string de caracteres usada para identificar o cookie.</p>
+
+		<p>
+			<b>EXPIRES:</b> é a data em que o cookie deve ser removido do arquivo de cookies se ele ainda
+			estiver lá. Não sendo especificada nenhuma data, o cookie terá sua validade vencida assim que
+			o usuário sair do browser e encerrar a sessão.
+		</p>
+
+		<p>
+			<b>PATH:</b> é o nome do caminho ou URL do documento que criou o cookie (motivo privacidade)
+		</p>
+
+		<p>
+			<b>DOMAIN:</b> é o nome completo do domínio do servidor (ou computador central) que
+			criou o cookie.
+		</p>
+
+	</div>
+
 
 	
 </body>
