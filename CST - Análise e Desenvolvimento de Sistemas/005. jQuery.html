@@ -15,7 +15,7 @@
 
 	<h1 class="text-center">jQuery</h1>
 
-	<div>
+	<div class="DivClass">
 		<h2>O que é jQuery</h2>
 		
 		<p>
@@ -42,7 +42,7 @@
 
 	</div>
 
-	<div>
+	<div class="DivClass">
 		<h2>Seletores</h2>
 
 		<p>
@@ -68,9 +68,9 @@
 
 		</p>
 		<hr>
-		</div>
+	</div>
 
-		<div>
+	<div class="DivClass">
 		<h3>Seletores Básicos</h3>
 
 		<p>
@@ -119,7 +119,7 @@
 		<p class="color-red">***Importante: O jQuery é CaseSensitive, então a palavra class é diferente da palavra Class</p>
 	</div>
 
-	<div>
+	<div class="DivClass">
 		<h2>Seletores em Atributos</h2>
 		<p>			
 			Com jQuery podemos selecionar ou ter acesso aos elementos de acordo com os atributos do html. Para ter o acesso, basta informar o atributo, o operador e o valor, dentro de chaves ([]).
@@ -176,6 +176,71 @@
 		</ul>
 
 	</div>
+
+	<div class="DivClass">
+		
+		<h2>Eventos</h2>
+
+		<p>
+			Vejamos alguns eventos para trabalhar juntamente com jQuery:
+		</p>
+
+		<ul>
+			<li>$(document).ready(função) – quando a página for toda carregada, a função será executada.</li>
+			<li>$(seletor).click(função) – quando o elemento indicado no seletor for selecionado e receber o evento click, a função é executada.</li>
+			<li>$(seletor).dbclick(função) – quando o elemento indicado no seletor for selecionado e receber o evento duplo clik, a função é executada.</li>
+			<li>$(seletor).change(função) – quando o elemento indicado no seletor for selecionado e sofre uma alteração, então a função será executada.</li>
+			<li>$(seletor).focus(função) – quando o elemento indicado no seletor receber o foco, a função é executada.</li>
+		</ul>
+
+		<p>
+			O exemplo a seguir exemplifica que será executada a função que está dentro do ready, ao final do carregamento da página.
+		</p>
+
+		<div class="CodHtml">
+			&lt;p id="Elemento">Texto sem alteração&lt;p>
+		</div>
+
+		<div class="CodClass">
+			$(document).ready(function(){ <br>
+				&nbsp;&nbsp;&nbsp;&nbsp;$("#Elemento").text("Texto Alterado pelo jQuery")<br>
+			});<br>
+		</div>
+
+		<h4>Resultado:</h4>
+		<p id="Elemento">Texto sem alteração</p>
+
+		<hr>
+
+		<div class="CodHtml">
+			&lt;div id="div1" style="width: 400px">&lt;p>Irá Sumir ao clicar com o botão&lt;/p>&lt;/div><br>
+			&lt;input type="button" id="btnHide" value="Clique aqui">
+		</div>
+
+		<div class="CodClass">
+			var click = 1;<br><br>
+
+			$(document).ready(function(){<br>
+			&nbsp;&nbsp;$("#btnHide").click(function(){<br>
+					&nbsp;&nbsp;&nbsp;if (click == 1) {<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;$("#div1").hide();<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;click = 0;<br>
+					&nbsp;&nbsp;&nbsp;}else{<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;$("#div1").show();<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;click = 1;<br>
+					&nbsp;&nbsp;&nbsp;}<br>
+				&nbsp;&nbsp;});<br>
+			});<br>
+		</div>
+
+		<h4>Resultado:</h4>
+		<div id="div1" style="width: 400px"><p>Irá Sumir ao clicar com o botão</p></div>
+		<div style="width: 80px" id="btnHide">Clique aqui</div>
+
+
+	</div>
+
+	<div class="DivClass"></div>
 
 	<script src="_AulaJQuery.js"></script>
 </body>
