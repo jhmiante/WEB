@@ -1,4 +1,4 @@
-div
+.DivClass
 	{
 		border:2px solid #a1a1a1;
 		padding:10px 40px;
@@ -34,6 +34,8 @@ h2 { text-shadow: 5px 5px 5px #00000F; }
 		width: 600px;
 		border-radius:5px;
 		-moz-border-radius:5px; /* Firefox 3.6 and earlier */
+		margin: 25px auto;
+		padding:10px 40px;
 	}
 
 .CodHtml
@@ -44,4 +46,18 @@ h2 { text-shadow: 5px 5px 5px #00000F; }
 		width: 600px;
 		border-radius:5px;
 		-moz-border-radius:5px; /* Firefox 3.6 and earlier */
+		margin: 25px auto;
+		padding:10px 40px;
 	}
+
+
+.Exemplo{
+		border:2px solid #a1a1a1;
+		color: red;
+		background-color: white;
+		width: 600px;
+		border-radius:5px;
+		-moz-border-radius:5px; /* Firefox 3.6 and earlier */
+		margin: 25px auto;
+		padding:10px 40px;
+}

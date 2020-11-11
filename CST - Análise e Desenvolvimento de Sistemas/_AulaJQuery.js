@@ -18,3 +18,16 @@ $(document).ready(function(){
 		}
 	});
 });
+
+
+
+$(document).ready(function(){
+	$("#b1").click(function(){
+		$("[type=text]").val("Inserindo um valor novo");
+		$("[type=text]").before(" - Antes - ");
+		$("[type=text]").after(" - Depois - ");
+		$("#d1").prepend("Aprendendo ");
+		$("#d1").append(" jQuery ");
+		$("#d2").html("Programação Web ");
+	});
+});

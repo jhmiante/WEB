@@ -234,9 +234,63 @@
 		</div>
 
 		<h4>Resultado:</h4>
-		<div id="div1" style="width: 400px"><p>Irá Sumir ao clicar com o botão</p></div>
-		<div style="width: 80px" id="btnHide">Clique aqui</div>
+		<div id="div1" style="width: 400px" class="DivClass"><p>Irá Sumir ao clicar com o botão</p></div>
+		<div style="width: 80px" id="btnHide" class="DivClass">Clique aqui</div>
 
+
+	</div>
+
+	<div class="DivClass">
+		
+		<h2>Métodos</h2>
+
+		<ol>
+			<li>$(seletor).text(conteúdo) – acessa o texto dos elementos.</li>
+			<li>$(seletor).val(conteúdo) – acessa os valores dos elementos contidos em um formulário. Os elementos podem ser do tipo input, select e radio.</li>
+			<li>$(seletor).html(conteúdo) – recupera ou define o conteúdo dos elementos, por exemplo, o código html que está dentro de uma div</li>
+			<li>$(seletor).append(conteúdo) – insere o conteúdo ao final do elemento.</li>
+			<li>$(seletor).prepend(conteúdo) – insere o conteúdo no início do elemento.</li>
+			<li>$(seletor).after(conteúdo) – insere o conteúdo informado após o elemento.</li>
+			<li>$(seletor).before(conteúdo) – insere o conteúdo informado antes do elemento.</li>
+		</ol>
+
+		<h4>Veja os elementos utilizados e o resultado no browser:</h4>
+		<div class="CodHtml">
+			
+			&lt;div id="d1" class="Exemplo">Aprendendo jQuery&lt;/div><br><br>
+		
+			&lt;input type="text" value="Valor Inicial"><br>
+			&lt;input type="button" id="b1" value="Clique Aqui"><br>
+			<br>
+			&lt;br><br>
+			<br>
+			&lt;div id="d2" class="Exemplo">Praticando jQuery&lt;/div>
+
+		</div>
+
+		<div class="CodClass">
+			
+			$(document).ready(function(){<br>
+				&nbsp;&nbsp;$("#b1").click(function(){<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;$("[type=text]").val("Inserindo um valor novo");<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;$("[type=text]").before(" - Antes - ");<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;$("[type=text]").after(" - Depois - ");<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;$("#d1").prepend("Aprendendo ");<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;$("#d1").append(" jQuery ");<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;$("#d2").html("Programação Web ");<br>
+				&nbsp;&nbsp;});<br>
+			});
+
+		</div>
+
+		<div id="d1" class="Exemplo">Aprendendo jQuery</div>
+		
+		<input type="text" value="Valor Inicial">
+		<input type="button" id="b1" value="Clique Aqui">
+		
+		<br><br>
+
+		<div id="d2" class="Exemplo">Praticando jQuery</div>
 
 	</div>
 
