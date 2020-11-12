@@ -278,9 +278,170 @@
 					<input type="text" name="cpf" id="cpf" size="20">
 				</p>
 				<p>
-					<input type="button" name="button" id="button1" value="Gravar Cookies">
+					<input type="button" name="button1" id="button1" value="Gravar Cookies">
 					<input type="button" name="button2" id="button2" value="Carregar Cookies">
 					<input type="button" name="button3" id="button3" value="Eliminar Cookies">
+				</p>
+			</form>
+
+			<p>//CÓDIGO APOSTILA - NÃO FUNCIONANDO - VERIFICAR</p>
+		</div>
+
+	</div>
+
+	<div class="DivClass">
+		
+		<h2>Web Storage (HTML5)</h2>
+
+		<p>
+			Com essa API, o desenvolvimento fica mais fácil e temos algumas vantagens sobre os
+			cookies; a mais significativa seria a capacidade de armazenamento, que varia, de acordo com o
+			navegador, de 5MB até 10MB (IE).
+		</p>
+
+		<p>
+			A Web Storage oferece dois tipos de armazenamento: <b>sessionStorage e localStorage.</b>
+		</p>
+
+		<h3>sessionStorage</h3>
+		<p>
+			Disponível apenas para a janela (aba) que criou o dado até que esta seja fechada.
+		</p>
+
+		<h3>localStorage</h3>
+		<p>
+			Compartilhada por todas as janelas (abas) abertas pela aplicação, e os dados só são
+			apagados caso sejam deletados pela aplicação ou pelo usuário.
+		</p>
+
+		<hr>
+
+		<h3>Como usar (os métodos são os mesmos para o objeto sessionStorage e localStorage):</h3>
+
+		<h4>Para gravar dados:</h4>
+		<p><i>setItem(nome, valor)</i></p>
+		<p>
+			Ex: localStorage.setItem(“nome”,”Maria”);<br>
+			Ex: sessionStorage.setItem(“nome”,”Maria”);
+		</p>
+
+		<h4>Para recuperar dados gravados:</h4>
+		<p><i>getItem(nome)</i></p>
+		<p>
+			Ex: localStorage.getItem(“nome”)<br>
+			Ex: sessionStorage.getItem(“nome”)
+		</p>
+
+		<h4>Para apagar dados gravados:</h4>
+		<p><i>removeItem(nome)</i></p>
+		<p>
+			Ex: localStorage.removeItem(“nome”)<br>
+			Ex: sessionStorage.removeItem(“nome”)
+		</p>
+
+		<h4>Para apagar todos os dados do storage:</h4>
+		<p><i>clear()</i></p>
+		<p>
+			Ex: localStorage.clear()<br>
+			Ex: sessionStorage.clear()
+		</p>
+
+		<p>
+			Vejamos, na prática, a utilização do webstorage. Essas funções podem ser utilizadas no
+			mesmo formulário que foi exibido no item de cookie.			
+		</p>
+
+		<div class="CodClass">
+			//Código Ajax.js<br><br>
+
+
+			//LOCALSTORAGE <br><br>
+
+			//Abaixo, funções que são acionadas através do id.<br>
+			$(document).ready(function(){<br>
+				$("#button4").click(gravarDados);<br>
+				$("#button5").click(carregarDados);<br>
+				$("#button6").click(function(){<br>
+					apagarDados();<br>
+				});<br>
+			});<br><br>
+
+			// A sintaxe abaixo demonstra os comandos para registrar as informações em localStorage.<br>
+			function gravarDados(){<br>
+				localStorage.setItem("rgm2",$("#rgm2").val());<br>
+				localStorage.setItem("nome2",$("#nome2").val());<br>
+				localStorage.setItem("profissao2",$("#profissao2").val());<br>
+				localStorage.setItem("cpf2",$("#cpf2").val());<br>
+				alert("Dados Gravados!");<br>
+				limparDados();<br>
+			}<br><br>
+
+
+			//A sintaxe abaixo demonstra os comandos para recuperar as informações em localStorage e alimentar os elementos html.<br>
+			function carregarDados(){<br>
+				if(localStorage.length > 0)<br>
+				{<br>
+					$("#rgm2").val(localStorage.getItem("rgm2"));<br>
+					$("#nome2").val(localStorage.getItem("nome2"));<br>
+					$("#profissao2").val(localStorage.getItem("profissao2"));<br>
+					$("#cpf2").val(localStorage.getItem("cpf2"));<br>
+				}<br>
+				else<br>
+				{<br>
+					alert("Nenhum Cookie Encontrado!")<br>
+				}<br>
+			}<br><br>
+
+
+			//A sintaxe abaixo demonstra os comandos para deletar as informações dos localStorage.<br>
+			function apagarDados(){<br>
+				if (localStorage.length > 0) <br>
+				{<br>
+					localStorage.clear();<br>
+				}<br>
+				else<br>
+				{<br>
+					alert("Nenhum Cookie Encontrado!")<br>
+				}<br>
+				limparCampos();<br>
+			}<br><br>
+
+
+			//A sintaxe abaixo demonstra os comandos para limpar as informações dos elementos html.<br>
+			function limparDados(){<br>
+				$("#rgm2").val("");<br>
+				$("#nome2").val("");<br>
+				$("#profissao2").val("");<br>
+				$("#cpf2").val("");<br>
+			}<br>
+
+
+		</div>
+
+		<div class="Exemplo">
+			<p>Abaixo, um formulário contendo alguns campos.</p>
+			<hr>
+			<form id="form2" name="form2" method="post" action="">
+				<p>
+					RGM:
+					<input type="text" name="rgm2" id="rgm2" size="10">
+				</p>
+				<p>
+					Nome:
+					<input type="text" name="nome2" id="nome2" size="60">
+				</p>
+				<p>
+					Profissão:
+					<input type="text" name="profissao2" id="profissao2" size="60">
+				</p>
+				<p>
+					CPF:
+					<input type="text" name="cpf2" id="cpf2" size="20">
+				</p>
+				<p>
+					<input type="button" name="button4" id="button4" value="Gravar Cookies">
+					<input type="button" name="button5" id="button5" value="Carregar Cookies">
+					<input type="button" name="button6" id="button6" value="Eliminar Cookies">
 				</p>
 			</form>
 		</div>

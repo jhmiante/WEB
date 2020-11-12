@@ -1,3 +1,4 @@
+
 //Abaixo, funções que são acionadas através do id.
 $(document).ready(function(){
 	$("#button1").click(gravarCookie);
@@ -57,4 +58,67 @@ function limparCampos(){
 	$("#nome").val("");
 	$("#profissao").val("");
 	$("#cpf").val("");
+}
+
+
+
+
+//LOCALSTORAGE
+
+//Abaixo, funções que são acionadas através do id.
+$(document).ready(function(){
+	$("#button4").click(gravarDados);
+	$("#button5").click(carregarDados);
+	$("#button6").click(function(){
+		apagarDados();
+	});
+});
+
+// A sintaxe abaixo demonstra os comandos para registrar as informações em localStorage.
+function gravarDados(){
+	localStorage.setItem("rgm2",$("#rgm2").val());
+	localStorage.setItem("nome2",$("#nome2").val());
+	localStorage.setItem("profissao2",$("#profissao2").val());
+	localStorage.setItem("cpf2",$("#cpf2").val());
+	alert("Dados Gravados!");
+	limparDados();
+}
+
+
+//A sintaxe abaixo demonstra os comandos para recuperar as informações em localStorage e alimentar os elementos html.
+function carregarDados(){
+	if(localStorage.length > 0)
+	{
+		$("#rgm2").val(localStorage.getItem("rgm2"));
+		$("#nome2").val(localStorage.getItem("nome2"));
+		$("#profissao2").val(localStorage.getItem("profissao2"));
+		$("#cpf2").val(localStorage.getItem("cpf2"));
+	}
+	else
+	{
+		alert("Nenhum Cookie Encontrado!")
+	}
+}
+
+
+//A sintaxe abaixo demonstra os comandos para deletar as informações dos localStorage.
+function apagarDados(){
+	if (localStorage.length > 0) 
+	{
+		localStorage.clear();
+	}
+	else
+	{
+		alert("Nenhum Cookie Encontrado!")
+	}
+	limparCampos();
+}
+
+
+//A sintaxe abaixo demonstra os comandos para limpar as informações dos elementos html.
+function limparDados(){
+	$("#rgm2").val("");
+	$("#nome2").val("");
+	$("#profissao2").val("");
+	$("#cpf2").val("");
 }
