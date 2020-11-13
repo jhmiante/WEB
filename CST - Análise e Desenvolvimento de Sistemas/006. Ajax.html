@@ -448,6 +448,60 @@
 
 	</div>
 
+	<div class="DivClass">
+		
+		<h2>Ajax</h2>
+
+		<p>
+			O jQuery oferece uma vasta documentação para se trabalhar as requisições AJAX. Quando
+			trabalhamos com AJAX, utilizamos um objeto nativo dos navegadores que permite a comunicação
+			assíncrona com o servidor. 
+		</p>
+
+		<h3>Objeto XMLHttpRequest</h3>
+		<p>
+			O objeto utilizado no AJAX é o XMLHttpRequest, manipulado através de javascript e que efetua a comunicação com o servidor através de requisições HTTP. <br>
+
+			É um objeto nativo padronizado nos navegadores atuais, mas implementado como controle ActiveX nas versões antigas do Internet Explorer, isto é, 5 e 6. Isso significa que, antes de criá-lo, é necessário fazer uma verificação. <br>
+
+			Os métodos disponíveis são apenas dois: open() para abrir a requisição e send() para enviar os dados. E, para receber, a propriedade é a ResponseXML.
+		</p>
+
+		<div class="DivClass">
+			function loadXMLDoc(){ <br>
+			 	if (window.XMLHttpRequest)<br>
+			 	{<br>
+			 		// code for IE7+, Firefox, Chrome, Opera, Safari<br>
+			 		xmlhttp=new XMLHttpRequest();<br>
+			 	}<br>
+			 	else<br>
+			 	{<br>
+			 		// code for IE6, IE5<br>
+			 		xmlhttp=new ActiveXObject(“Microsoft.XMLHTTP”);<br>
+			 	}<br><br>
+
+			 	xmlhttp.onreadystatechange=function()<br>
+			 		{<br>
+			 			if (xmlhttp.readyState==4 && xmlhttp.status==200)<br>
+			 				{<br>
+			 					//código de retorno aqui;<br>
+			 				}<br>
+			 		}<br>
+			 	xmlhttp.open(“GET”,url,true);<br>
+			 	xmlhttp.send();<br>
+			}
+		</div>
+
+		<p>
+			Toda a comunicação e verificação é feita pela função do jQuery; precisamos apenas informar os dados. Sendo assim, vamos à primeira função.
+		</p>
+
+		<hr>
+
+		
+
+	</div>
+
 	<script type="text/javascript" src="Ajax.js"></script>
 </body>
 </html>
