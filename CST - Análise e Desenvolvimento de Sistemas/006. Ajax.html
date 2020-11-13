@@ -192,70 +192,7 @@
 
 		</div>
 
-		<div class="CodClass">
-			//Código Ajax <br><br>
-
-			//Abaixo, funções que são acionadas através do id.<br>
-				$(document).ready(function(){<br>
-					$("#button1").click(gravarCookie);<br>
-					$("#button2").click(carregarCookie);<br>
-					$("#button3").click(function(){<br>
-						apagarCookie();<br>
-					});<br>
-				});<br><br>
-
-
-				// A sintaxe abaixo demonstra os comandos para registrar as informações em cookies.<br>
-				function gravarCookie(){<br>
-					$.cookie("rgm",$("#rgm").val(),{expires: 5});<br>
-					$.cookie("nome",$("#nome").val(),{expires: 5});<br>
-					$.cookie("profissao",$("#profissao").val(),{expires: 5});<br>
-					$.cookie("cpf",$("#cpf").val(),{expires: 5});<br>
-					alert("Dados Gravados!");<br>
-					limparCampos();<br>
-				}<br><br>
-
-
-				//A sintaxe abaixo demonstra os comandos para recuperar as informações em cookies e alimentar os elementos html.<br>
-				function carregarCookie(){<br>
-					if($.cookie("rgm") != null)<br>
-					{<br>
-						$("#rgm").val($.cookie("rgm"));<br>
-						$("#nome").val($.cookie("nome"));<br>
-						$("#profissao").val($.cookie("profissao"));<br>
-						$("#cpf").val($.cookie("cpf"));<br>
-					}<br>
-					else<br>
-					{<br>
-						alert("Nenhum Cookie Encontrado!")<br>
-					}<br>
-				}<br><br>
-
-
-				//A sintaxe abaixo demonstra os comandos para deletar as informações dos cookies.<br>
-				function apagarCookie(){<br>
-					if ($.cookie("rgm") != null) <br>
-					{<br>
-						$.removeCookie("rgm");<br>
-						$.removeCookie("nome");<br>
-						$.removeCookie("profissao");<br>
-						$.removeCookie("cpf");<br>
-					}<br>
-					else<br>
-					{<br>
-						alert("Nenhum Cookie Encontrado!")<br>
-					}<br>
-				}<br><br>
-
-
-				//A sintaxe abaixo demonstra os comandos para limpar as informações dos elementos html.<br>
-				function limparCampos(){<br>
-					$("#rgm").val("");<br>
-					$("#nome").val("");<br>
-					$("#profissao").val("");<br>
-					$("#cpf").val("");<br>
-				}<br>
-		</div>		
+		<img src="img/cookie.png" class="imgClass">	
 
 		<div class="Exemplo">
 			<p>Abaixo, um formulário contendo alguns campos.</p>
@@ -352,71 +289,10 @@
 		</p>
 
 		<div class="CodClass">
-			//Código Ajax.js<br><br>
-
-
-			//LOCALSTORAGE <br><br>
-
-			//Abaixo, funções que são acionadas através do id.<br>
-			$(document).ready(function(){<br>
-				$("#button4").click(gravarDados);<br>
-				$("#button5").click(carregarDados);<br>
-				$("#button6").click(function(){<br>
-					apagarDados();<br>
-				});<br>
-			});<br><br>
-
-			// A sintaxe abaixo demonstra os comandos para registrar as informações em localStorage.<br>
-			function gravarDados(){<br>
-				localStorage.setItem("rgm2",$("#rgm2").val());<br>
-				localStorage.setItem("nome2",$("#nome2").val());<br>
-				localStorage.setItem("profissao2",$("#profissao2").val());<br>
-				localStorage.setItem("cpf2",$("#cpf2").val());<br>
-				alert("Dados Gravados!");<br>
-				limparDados();<br>
-			}<br><br>
-
-
-			//A sintaxe abaixo demonstra os comandos para recuperar as informações em localStorage e alimentar os elementos html.<br>
-			function carregarDados(){<br>
-				if(localStorage.length > 0)<br>
-				{<br>
-					$("#rgm2").val(localStorage.getItem("rgm2"));<br>
-					$("#nome2").val(localStorage.getItem("nome2"));<br>
-					$("#profissao2").val(localStorage.getItem("profissao2"));<br>
-					$("#cpf2").val(localStorage.getItem("cpf2"));<br>
-				}<br>
-				else<br>
-				{<br>
-					alert("Nenhum Cookie Encontrado!")<br>
-				}<br>
-			}<br><br>
-
-
-			//A sintaxe abaixo demonstra os comandos para deletar as informações dos localStorage.<br>
-			function apagarDados(){<br>
-				if (localStorage.length > 0) <br>
-				{<br>
-					localStorage.clear();<br>
-				}<br>
-				else<br>
-				{<br>
-					alert("Nenhum Cookie Encontrado!")<br>
-				}<br>
-				limparCampos();<br>
-			}<br><br>
-
-
-			//A sintaxe abaixo demonstra os comandos para limpar as informações dos elementos html.<br>
-			function limparDados(){<br>
-				$("#rgm2").val("");<br>
-				$("#nome2").val("");<br>
-				$("#profissao2").val("");<br>
-				$("#cpf2").val("");<br>
-			}<br>
-
-
+			//LOCALSTORAGE 
 		</div>
+
+		<img src="img/localStorage.png" class="imgClass">
 
 		<div class="Exemplo">
 			<p>Abaixo, um formulário contendo alguns campos.</p>
@@ -467,30 +343,7 @@
 			Os métodos disponíveis são apenas dois: open() para abrir a requisição e send() para enviar os dados. E, para receber, a propriedade é a ResponseXML.
 		</p>
 
-		<div class="DivClass">
-			function loadXMLDoc(){ <br>
-			 	if (window.XMLHttpRequest)<br>
-			 	{<br>
-			 		// code for IE7+, Firefox, Chrome, Opera, Safari<br>
-			 		xmlhttp=new XMLHttpRequest();<br>
-			 	}<br>
-			 	else<br>
-			 	{<br>
-			 		// code for IE6, IE5<br>
-			 		xmlhttp=new ActiveXObject(“Microsoft.XMLHTTP”);<br>
-			 	}<br><br>
-
-			 	xmlhttp.onreadystatechange=function()<br>
-			 		{<br>
-			 			if (xmlhttp.readyState==4 && xmlhttp.status==200)<br>
-			 				{<br>
-			 					//código de retorno aqui;<br>
-			 				}<br>
-			 		}<br>
-			 	xmlhttp.open(“GET”,url,true);<br>
-			 	xmlhttp.send();<br>
-			}
-		</div>
+		<img src="img/ajax00.png" class="imgClass">
 
 		<p>
 			Toda a comunicação e verificação é feita pela função do jQuery; precisamos apenas informar os dados. Sendo assim, vamos à primeira função.
@@ -498,7 +351,130 @@
 
 		<hr>
 
-		
+		<h3>$.ajax()</h3>
+
+		<p>
+			É a função que mais oferece funcionalidades e, devido a isso, exige um pouco mais de estudo para ser compreendida. <br>
+
+			E todas as funções mais específicas que serão apresentadas adiante utilizam esta função para iniciar as requisições. <br>
+
+			Para haver a requisição, você precisa informar um seletor que vai dar início à execução, o endereço do arquivo que contém os dados que serão retornados, o tipo de dado retornado e o que será feito com ele.
+		</p>
+
+		<img src="img/ajax01.png" class="imgClass">
+
+		<br>
+
+		<p>
+			Quando o botão “enviar” do formulário for clicado, será iniciada a requisição. Utilizando o método POST, que é mais seguro para dados sensíveis, em seguida enviamos a dupla variável/valor para o arquivo 'info.php'. Havendo sucesso na requisição, as informações retornadas pelo arquivo serão mostradas em uma div. <br>
+			Não chega a ser tão complicado quanto eu disse, não é mesmo?
+		</p>
+
+		<hr>
+		<h3>Configurações</h3>
+
+		<p>Vejamos, agora, as opções disponíveis. Essas informações podem ser encontradas na biblioteca do jQuery.</p>
+
+		<ul>
+			<li>
+				asinc – Como a requisição é feita com AJAX, ela é assíncrona. Se você quiser sincronizar
+				a requisição, deve setar true para esta variável. Mas aviso que pode causar instabilidade
+				na aplicação.
+			</li>
+			<br>
+			<li>
+				beforeSend – Para alterar o cabeçalho da requisição ou realizar operações antes do envio
+				da requisição, utilize esta função.
+			</li>
+			<br>
+			<li>
+				cache – As páginas requisitadas via ajax() são armazenadas pelo navegador para agilizar o processo. Se você não quer que a página fique em cache, atribua false.
+			</li>
+			<br>
+			<li>
+				complete – Completando a requisição, esta função define o que deve ser feito. Vem depois das funções success e error.
+			</li>
+			<br>
+			<li>
+				contentType – Define o myme type da requisição. O padrão é application/x-ww-formurlencoded. que é o myme type enviado quando submetemos formulários.
+			</li>
+			<br>
+			<li>
+				data – São os dados que serão passados para o arquivo definido em url. O formato deve ser variável/valor e, se você não deixar nesta formatação, a função formatará automaticamente.
+			</li>
+			<br>
+			<li>
+				dataFilter – A função é garantir que os dados retornados estejam nas diretrizes esperadas
+			</li>
+			<br>
+			<li>
+				dataType – Você define qual o tipo de dado a ser retornado pela requisição. Os valores possíveis são: xml, html, json, sjonp, script e text. Configurando esta opção, você permite uma avaliação dos dados que são retornados. Se esta opção for omitida, a função identifica o tipo de dado, mas não avalia.
+			</li>
+			<br>
+			<li>
+				error – Função que entra em ação caso a requisição retorne erro.
+			</li>
+			<br>
+			<li>
+				global – Indica se os eventos manipuladores definidos em .ajaxSend() e .ajaxError() valerão na requisição atual. Por padrão está setado para true.
+			</li>
+			<br>
+			<li>
+				ifModified – Se você quer que uma requisição seja retornada somente se o conteúdo dele mudou em relação à última requisição, configure esta variável para true
+			</li>
+			<br>
+			<li>
+				processData – Esta variável é configurada para processar e transformar as informações passadas para o padrão application/x-www-form-urlencoded. Se, por algum motivo, você não quer esta formatação, como mandar no formato xml para o servidor, atribua false para esta variável.
+			</li>
+			<br>
+			<li>
+				password e username– Senha e usuário a serem utilizados em caso de autenticação HTTP.
+			</li>
+			<br>
+			<li>
+				successs – A requisição retornando sucesso, é executada esta função, que recebe os dados enviados pelo arquivo
+			</li>
+			<br>
+			<li>
+				timeout – Se você quer limitar o tempo para a execução da requisição, defina um valor em milissegundos. Não retornando sucesso dentro do tempo definido, uma mensagem de erro, configurada por você na função error, será mostrada.
+			</li>
+			<br>
+			<li>
+				type – O método usado para a requisição. Aceita GET ou POST. O padrão é GET
+			</li>
+			<br>
+			<li>
+				url – Endereço do arquivo que receberá a requisição.
+			</li>
+		</ul>
+
+		<p>
+			Existem outras configurações, mas conhecer essas acima acredito que seja suficiente para realizar as atividades.
+		</p>
+
+		<hr>
+		<h3>Fazendo uma requisição</h3>
+		<p>
+			Vamos, então, a um exemplo aplicado do que vimos acima.
+		</p>
+
+		<img src="img/ajax02.png" class="imgClass">
+
+		<br>
+
+		<h3>
+			Vamos à explicação: 
+		</h3>
+
+		<p>
+			A função inicia-se passando o nome do arquivo que receberá as informações, o tipo de requisição e os dados. O objeto data aceita a combinação de variável/valor já encapsulada com os símbolos (& e =) ou como apresentado acima. Nesse caso, os dados são formatados antes de serem enviados. E fica mais organizado. <br><br>
+			
+			Em seguida, definimos que os dados retornados serão do tipo HTML, e também informamos o usuário e senha (no exemplo, o servidor exige autenticação). Antes de enviar, informamos ao usuário o que está acontecendo, tornando visível a div com uma animação de carregamento (fade in). <br><br>
+			
+			Em um último ajuste, é definido que a requisição deve durar, no máximo, três segundos (3000 milissegundos). Se esse tempo for ultrapassado, a função error entra em ação e apresenta uma mensagem descrevendo o erro. <br><br>
+
+			Tudo acertado e a requisição sendo um sucesso, com retorno de informação, a div ‘#resposta’ recebe os dados.
+		</p>
 
 	</div>
 

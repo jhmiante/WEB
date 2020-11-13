@@ -8,7 +8,6 @@ $(document).ready(function(){
 	});
 });
 
-
 // A sintaxe abaixo demonstra os comandos para registrar as informações em cookies.
 function gravarCookie(){
 	$.cookie("rgm",$("#rgm").val(),{expires: 5});
@@ -19,38 +18,29 @@ function gravarCookie(){
 	limparCampos();
 }
 
-
 //A sintaxe abaixo demonstra os comandos para recuperar as informações em cookies e alimentar os elementos html.
 function carregarCookie(){
-	if($.cookie("rgm") != null)
-	{
+	if($.cookie("rgm") != null)	{
 		$("#rgm").val($.cookie("rgm"));
 		$("#nome").val($.cookie("nome"));
 		$("#profissao").val($.cookie("profissao"));
 		$("#cpf").val($.cookie("cpf"));
-	}
-	else
-	{
+	} else{
 		alert("Nenhum Cookie Encontrado!")
 	}
 }
 
-
 //A sintaxe abaixo demonstra os comandos para deletar as informações dos cookies.
 function apagarCookie(){
-	if ($.cookie("rgm") != null) 
-	{
+	if ($.cookie("rgm") != null) {
 		$.removeCookie("rgm");
 		$.removeCookie("nome");
 		$.removeCookie("profissao");
 		$.removeCookie("cpf");
-	}
-	else
-	{
+	} else{
 		alert("Nenhum Cookie Encontrado!")
 	}
 }
-
 
 //A sintaxe abaixo demonstra os comandos para limpar as informações dos elementos html.
 function limparCampos(){
@@ -84,36 +74,29 @@ function gravarDados(){
 	limparDados();
 }
 
-
 //A sintaxe abaixo demonstra os comandos para recuperar as informações em localStorage e alimentar os elementos html.
 function carregarDados(){
-	if(localStorage.length > 0)
-	{
+	if(localStorage.length > 0)	{
 		$("#rgm2").val(localStorage.getItem("rgm2"));
 		$("#nome2").val(localStorage.getItem("nome2"));
 		$("#profissao2").val(localStorage.getItem("profissao2"));
 		$("#cpf2").val(localStorage.getItem("cpf2"));
 	}
-	else
-	{
+	else{
 		alert("Nenhum Cookie Encontrado!")
 	}
 }
 
-
 //A sintaxe abaixo demonstra os comandos para deletar as informações dos localStorage.
 function apagarDados(){
-	if (localStorage.length > 0) 
-	{
+	if (localStorage.length > 0) {
 		localStorage.clear();
-	}
-	else
-	{
+	} 
+	else{
 		alert("Nenhum Cookie Encontrado!")
 	}
 	limparCampos();
 }
-
 
 //A sintaxe abaixo demonstra os comandos para limpar as informações dos elementos html.
 function limparDados(){
@@ -126,7 +109,7 @@ function limparDados(){
 
 
 function loadXMLDoc(){
- 		if (window.XMLHttpRequest)
+ 	if (window.XMLHttpRequest)
  	{
  		// code for IE7+, Firefox, Chrome, Opera, Safari
  		xmlhttp=new XMLHttpRequest();
@@ -147,3 +130,43 @@ function loadXMLDoc(){
  	xmlhttp.open(“GET”,url,true);
  	xmlhttp.send();
 }
+
+
+$(function(){
+	$("#enviar").click(function(){
+		$.ajax({
+			type: 'post',
+			data: 'rgm=' + $('#rgm').val() + '&nome=' + $('#nome').val() + '&profissao=' + $('#profissao').val() + '&cpf=' + $('#cpf').val(),
+			url:'info.php',
+			success: function(retorno){
+				$('#resposta').html(retorno);
+			}
+		})
+	})
+})
+
+
+$.ajax({
+	
+ 	url : ‘info.php’,
+ 	type : ‘post’,
+ 	data : {‘aluno’:’Prof. Gobbato’, ‘email’: ‘professorgobbato@yahoo.com.br’},
+ 	dataType: ‘html’,
+ 	username: ‘professor’,
+ 	password: ‘123456’,
+
+ 	beforeSend: function(){
+ 		$(‘#carregando’).fadeIn();
+ 	},
+
+ 	timeout: 3000,
+
+ 	success: function(retorno){
+ 		$(‘#resposta’).html(retorno);
+ 	},
+
+ 	error: function(erro){
+ 		$(‘#resposta’).html(erro);
+ 	}
+
+ })
